@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0E8F8A">
+<meta name="description" content="เว็บติวข้อสอบสุขศึกษาและพลศึกษา ชั้นประถมศึกษาปีที่ 1 — โหมดทบทวน ข้อสอบ 5 แนว เฉลยทันที และหน้าสรุปผลสำหรับครู">
+<style>
+:root{color-scheme:light dark}
+html,body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<title>ห้องติวสุขศึกษา ป.1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&family=Sarabun:wght@400;600;700&family=Kanit:wght@500;600&display=swap">
+<style>
+:root{
+  --bg:#EFF5F4; --surface:#FFFFFF; --surface-2:#E4EDEC; --surface-3:#F7FBFA;
+  --ink:#15302E; --ink-2:#4B6765; --ink-3:#7A9290;
+  --line:#CFE0DD; --line-strong:#AFC9C6;
+  --brand:#0E8F8A; --brand-deep:#07605D; --brand-soft:#D6EDEB;
+  --gold:#E0900F; --gold-soft:#FBEDD2;
+  --ok:#17845A; --ok-soft:#DCF0E6;
+  --no:#C4462F; --no-soft:#FAE3DE;
+  --u1:#D44B75; --u2:#6F4FCE; --u3:#38913F; --u4:#2570C4;
+  --u1-soft:#FADFE7; --u2-soft:#E7E0FA; --u3-soft:#DCF0DC; --u4-soft:#DCE9FA;
+  --shadow:0 1px 2px rgba(16,48,46,.06), 0 8px 24px -12px rgba(16,48,46,.22);
+  --r-s:10px; --r-m:16px; --r-l:24px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1918; --surface:#152423; --surface-2:#1D2F2D; --surface-3:#122120;
+    --ink:#E9F3F1; --ink-2:#9FB8B5; --ink-3:#7B9491;
+    --line:#294140; --line-strong:#3A5553;
+    --brand:#41C5BE; --brand-deep:#8AE0DA; --brand-soft:#12403E;
+    --gold:#F0B45E; --gold-soft:#3B2E15;
+    --ok:#4FC992; --ok-soft:#123A2C;
+    --no:#F08067; --no-soft:#3D1F18;
+    --u1:#F2799C; --u2:#A78CF0; --u3:#6DC473; --u4:#63A6EF;
+    --u1-soft:#3A1C26; --u2-soft:#251C3E; --u3-soft:#15311A; --u4-soft:#15263C;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1918; --surface:#152423; --surface-2:#1D2F2D; --surface-3:#122120;
+  --ink:#E9F3F1; --ink-2:#9FB8B5; --ink-3:#7B9491;
+  --line:#294140; --line-strong:#3A5553;
+  --brand:#41C5BE; --brand-deep:#8AE0DA; --brand-soft:#12403E;
+  --gold:#F0B45E; --gold-soft:#3B2E15;
+  --ok:#4FC992; --ok-soft:#123A2C;
+  --no:#F08067; --no-soft:#3D1F18;
+  --u1:#F2799C; --u2:#A78CF0; --u3:#6DC473; --u4:#63A6EF;
+  --u1-soft:#3A1C26; --u2-soft:#251C3E; --u3-soft:#15311A; --u4-soft:#15263C;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.6);
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:"Sarabun","TH Sarabun New",system-ui,sans-serif;
+  font-size:17px; line-height:1.6; -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:900px; margin:0 auto; padding-inline:18px; padding-block:0 56px}
+h1,h2,h3,.disp{font-family:"Mali","Sarabun",cursive,sans-serif; text-wrap:balance; margin:0}
+.num{font-family:"Kanit","Sarabun",sans-serif; font-variant-numeric:tabular-nums}
+.eyebrow{font-family:"Kanit",sans-serif; font-size:.74rem; letter-spacing:.14em; color:var(--ink-3); text-transform:uppercase}
+
+/* ---- top bar ---- */
+.bar{position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid var(--line)}
+.bar-in{max-width:900px; margin:0 auto; padding:10px 18px; display:flex; align-items:center; gap:12px}
+.logo{width:38px; height:38px; flex:none; border-radius:12px; background:var(--brand); display:grid; place-items:center; color:#fff}
+.logo svg{width:22px; height:22px}
+.bar h1{font-size:1.05rem; line-height:1.2}
+.bar .sub{font-size:.75rem; color:var(--ink-2); font-family:"Kanit",sans-serif}
+.spacer{margin-left:auto}
+.starbox{display:flex; align-items:center; gap:6px; background:var(--gold-soft); color:var(--gold); border-radius:999px; padding:5px 12px; font-family:"Kanit",sans-serif; font-size:.88rem}
+.starbox svg{width:16px;height:16px}
+
+/* ---- buttons ---- */
+button{font-family:inherit; font-size:1rem; cursor:pointer}
+.btn{border:1px solid var(--line-strong); background:var(--surface); color:var(--ink); border-radius:999px; padding:11px 20px; min-height:46px; font-family:"Kanit",sans-serif; font-size:.95rem; transition:transform .12s, background .15s}
+.btn:hover{background:var(--surface-2)}
+.btn:active{transform:scale(.97)}
+.btn-primary{background:var(--brand); border-color:var(--brand); color:#fff}
+.btn-primary:hover{background:var(--brand-deep); border-color:var(--brand-deep)}
+:root[data-theme="dark"] .btn-primary,:root:not([data-theme="light"]) .btn-primary{color:#062120}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .btn-primary{color:#fff}}
+.btn-ghost{background:transparent; border-color:transparent; color:var(--ink-2)}
+.btn-ghost:hover{background:var(--surface-2)}
+.btn-lg{min-height:56px; font-size:1.05rem; padding:14px 26px}
+:focus-visible{outline:3px solid var(--brand); outline-offset:2px}
+
+/* ---- home ---- */
+.hero{margin-top:26px; display:flex; gap:18px; align-items:flex-start; flex-wrap:wrap}
+.hero h2{font-size:1.8rem; line-height:1.3}
+.hero p{margin:.4rem 0 0; color:var(--ink-2); max-width:46ch}
+.namecard{margin-top:22px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-m); padding:16px 18px; box-shadow:var(--shadow); display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+.namecard label{font-family:"Kanit",sans-serif; font-size:.9rem; color:var(--ink-2)}
+input[type=text]{font-family:"Sarabun",sans-serif; font-size:1.05rem; padding:11px 14px; min-height:46px; border-radius:12px; border:1px solid var(--line-strong); background:var(--surface-3); color:var(--ink); flex:1 1 180px; min-width:0}
+.hint{font-size:.85rem; color:var(--no); width:100%; margin:0}
+
+.sec-head{display:flex; align-items:baseline; gap:10px; margin:34px 0 14px; flex-wrap:wrap}
+.sec-head h3{font-size:1.25rem}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:14px}
+.unit{position:relative; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-m); padding:18px; box-shadow:var(--shadow); overflow:hidden}
+.unit::before{content:""; position:absolute; inset:0 0 auto 0; height:5px; background:var(--uc)}
+.unit .tag{display:inline-flex; align-items:center; gap:7px; background:var(--ucs); color:var(--uc); border-radius:999px; padding:4px 11px; font-family:"Kanit",sans-serif; font-size:.76rem; margin-bottom:9px}
+.unit .tag svg{width:15px;height:15px}
+.unit h4{font-family:"Mali",sans-serif; font-size:1.15rem; margin:0 0 4px; line-height:1.3}
+.unit p{margin:0; color:var(--ink-2); font-size:.92rem; min-height:2.6em}
+.best{display:flex; align-items:center; gap:9px; margin-top:13px; font-size:.82rem; color:var(--ink-2); font-family:"Kanit",sans-serif}
+.track{flex:1; height:8px; border-radius:99px; background:var(--surface-2); overflow:hidden}
+.track span{display:block; height:100%; background:var(--uc); border-radius:99px; transition:width .5s}
+.unit .acts{display:flex; gap:8px; margin-top:14px}
+.unit .acts .btn{flex:1; padding:10px 8px}
+
+.mixed{margin-top:14px; background:linear-gradient(115deg,var(--brand-soft),var(--surface)); border:1px solid var(--line); border-radius:var(--r-m); padding:20px; display:flex; gap:16px; align-items:center; flex-wrap:wrap}
+.mixed h4{font-family:"Mali",sans-serif; font-size:1.2rem; margin:0 0 3px}
+.mixed p{margin:0; color:var(--ink-2); font-size:.92rem}
+
+/* ---- review ---- */
+.crumbs{display:flex; align-items:center; gap:10px; margin:22px 0 6px; flex-wrap:wrap}
+.review-head h2{font-size:1.6rem; margin-bottom:4px}
+.review-head p{margin:0; color:var(--ink-2)}
+.rsec{margin-top:20px; background:var(--surface); border:1px solid var(--line); border-radius:var(--r-m); padding:18px; box-shadow:var(--shadow)}
+.rsec h3{font-size:1.08rem; color:var(--uc); display:flex; align-items:center; gap:9px; margin-bottom:10px}
+.rsec h3 b{width:26px; height:26px; flex:none; border-radius:8px; background:var(--ucs); color:var(--uc); display:grid; place-items:center; font-family:"Kanit",sans-serif; font-size:.85rem; font-weight:600}
+.rsec ul{margin:0; padding:0; list-style:none; display:grid; gap:9px}
+.rsec li{display:flex; gap:10px; font-size:1rem}
+.rsec li::before{content:""; flex:none; width:8px; height:8px; border-radius:3px; background:var(--uc); margin-top:.55em}
+.rsec li b{font-weight:600}
+.keybox{display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:10px; margin-top:4px}
+.key{background:var(--ucs); border-radius:var(--r-s); padding:12px; text-align:center}
+.key .n{font-family:"Kanit",sans-serif; font-size:1.7rem; font-weight:600; color:var(--uc); display:block; line-height:1.1}
+.key .l{font-size:.86rem; color:var(--ink-2)}
+.ready{margin:26px 0 0; display:flex; gap:10px; flex-wrap:wrap; justify-content:center}
+
+/* ---- quiz ---- */
+.qtop{display:flex; align-items:center; gap:12px; margin:20px 0 14px; flex-wrap:wrap}
+.dots{display:flex; gap:5px; flex-wrap:wrap; flex:1}
+.dot{width:9px; height:9px; border-radius:99px; background:var(--surface-2); border:1px solid var(--line)}
+.dot.ok{background:var(--ok); border-color:var(--ok)}
+.dot.no{background:var(--no); border-color:var(--no)}
+.dot.now{background:var(--brand); border-color:var(--brand); transform:scale(1.45)}
+.qcount{font-family:"Kanit",sans-serif; font-size:.88rem; color:var(--ink-2)}
+.qcard{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-l); padding:22px; box-shadow:var(--shadow)}
+.qtagline{display:inline-flex; align-items:center; gap:7px; background:var(--ucs); color:var(--uc); border-radius:999px; padding:4px 11px; font-family:"Kanit",sans-serif; font-size:.76rem; margin-bottom:12px}
+.qtext{font-family:"Mali",sans-serif; font-size:1.45rem; line-height:1.5; margin:0 0 18px}
+.opts{display:grid; gap:10px}
+.opt{display:flex; align-items:center; gap:12px; width:100%; text-align:start; background:var(--surface-3); border:2px solid var(--line); border-radius:16px; padding:14px 16px; min-height:60px; color:var(--ink); font-size:1.08rem; line-height:1.45; transition:border-color .15s, background .15s, transform .1s}
+.opt:hover:not(:disabled){border-color:var(--brand); background:var(--brand-soft)}
+.opt:active:not(:disabled){transform:scale(.99)}
+.opt .k{flex:none; width:34px; height:34px; border-radius:11px; background:var(--surface-2); color:var(--ink-2); display:grid; place-items:center; font-family:"Kanit",sans-serif; font-size:.95rem}
+.opt.correct{border-color:var(--ok); background:var(--ok-soft)}
+.opt.correct .k{background:var(--ok); color:#fff}
+.opt.wrong{border-color:var(--no); background:var(--no-soft)}
+.opt.wrong .k{background:var(--no); color:#fff}
+.opt:disabled{cursor:default; opacity:1}
+.opt.dim{opacity:.5}
+.fb{margin-top:16px; border-radius:16px; padding:15px 17px; display:flex; gap:12px; align-items:flex-start}
+.fb.good{background:var(--ok-soft)}
+.fb.bad{background:var(--no-soft)}
+.fb .ic{flex:none; width:32px; height:32px; border-radius:50%; display:grid; place-items:center; color:#fff}
+.fb.good .ic{background:var(--ok)} .fb.bad .ic{background:var(--no)}
+.fb .ic svg{width:18px;height:18px}
+.fb h4{font-family:"Mali",sans-serif; font-size:1.1rem; margin:0 0 2px}
+.fb.good h4{color:var(--ok)} .fb.bad h4{color:var(--no)}
+.fb p{margin:0; font-size:.98rem; color:var(--ink)}
+.qnav{margin-top:16px; display:flex; justify-content:flex-end; gap:10px}
+
+/* ---- question type chips ---- */
+.qtagline{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; background:none; padding:0; color:inherit}
+.chiplab{display:inline-flex; align-items:center; gap:7px; border-radius:999px; padding:4px 11px; font-family:"Kanit",sans-serif; font-size:.76rem}
+.chiplab svg{width:15px;height:15px}
+.chiplab.u{background:var(--ucs); color:var(--uc)}
+.chiplab.t{background:var(--surface-2); color:var(--ink-2)}
+.howto{margin:-6px 0 14px; font-size:.92rem; color:var(--ink-2)}
+
+/* ---- ถูก-ผิด ---- */
+.tf-row{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.tf{display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; min-height:104px; border-radius:20px; border:2px solid var(--line); background:var(--surface-3); color:var(--ink); font-family:"Mali",sans-serif; font-size:1.25rem; transition:border-color .15s, background .15s, transform .1s}
+.tf svg{width:30px; height:30px}
+.tf.y{color:var(--ok)} .tf.n{color:var(--no)}
+.tf:hover:not(:disabled){border-color:currentColor; background:var(--surface-2)}
+.tf:active:not(:disabled){transform:scale(.98)}
+.tf.chosen.y{border-color:var(--ok); background:var(--ok-soft)}
+.tf.chosen.n{border-color:var(--no); background:var(--no-soft)}
+.tf.key{border-color:var(--ok); background:var(--ok-soft); box-shadow:inset 0 0 0 2px var(--ok)}
+.tf:disabled{cursor:default}
+.tf.faded{opacity:.45}
+.stmt{font-family:"Mali",sans-serif; font-size:1.3rem; line-height:1.55; background:var(--surface-3); border:1px dashed var(--line-strong); border-radius:18px; padding:16px 18px; margin:0 0 16px}
+
+/* ---- เติมคำ ---- */
+.fill-sent{font-family:"Mali",sans-serif; font-size:1.35rem; line-height:2; margin:0 0 16px}
+.blank{display:inline-block; min-width:96px; text-align:center; border-bottom:3px solid var(--uc); color:var(--uc); padding:0 8px; font-weight:600}
+.blank.empty{color:var(--ink-3); border-bottom-color:var(--line-strong)}
+.banklabel{font-family:"Kanit",sans-serif; font-size:.8rem; color:var(--ink-2); margin:0 0 8px}
+.chips{display:flex; flex-wrap:wrap; gap:10px}
+.chip{border:2px solid var(--line); background:var(--surface-3); color:var(--ink); border-radius:999px; padding:11px 20px; min-height:50px; font-size:1.05rem; transition:border-color .15s, background .15s, transform .1s}
+.chip:hover:not(:disabled){border-color:var(--brand); background:var(--brand-soft)}
+.chip:active:not(:disabled){transform:scale(.97)}
+.chip.correct{border-color:var(--ok); background:var(--ok-soft); color:var(--ok)}
+.chip.wrong{border-color:var(--no); background:var(--no-soft); color:var(--no)}
+.chip.faded{opacity:.45}
+.chip:disabled{cursor:default}
+
+/* ---- เรียงลำดับ ---- */
+.steps{display:grid; gap:10px}
+.step{display:flex; align-items:center; gap:12px; text-align:start; width:100%; border:2px solid var(--line); background:var(--surface-3); color:var(--ink); border-radius:16px; padding:13px 15px; min-height:58px; font-size:1.05rem; line-height:1.45; transition:border-color .15s, background .15s, transform .1s}
+.step:hover:not(:disabled){border-color:var(--brand); background:var(--brand-soft)}
+.step:active:not(:disabled){transform:scale(.99)}
+.step .ord{flex:none; width:34px; height:34px; border-radius:50%; display:grid; place-items:center; font-family:"Kanit",sans-serif; font-size:1rem; background:var(--surface-2); color:var(--ink-3); border:2px dashed var(--line-strong)}
+.step.picked .ord{background:var(--uc); color:#fff; border-style:solid; border-color:var(--uc)}
+:root[data-theme="dark"] .step.picked .ord{color:#0D1918}
+.step.picked{border-color:var(--uc)}
+.step.right{border-color:var(--ok); background:var(--ok-soft)}
+.step.right .ord{background:var(--ok); border-color:var(--ok); color:#fff}
+.step.badplace{border-color:var(--no); background:var(--no-soft)}
+.step.badplace .ord{background:var(--no); border-color:var(--no); color:#fff}
+.step:disabled{cursor:default}
+.tools{display:flex; gap:9px; margin-top:12px; justify-content:flex-end}
+
+/* ---- จับคู่ ---- */
+.match-grid{display:grid; grid-template-columns:1fr 1fr; gap:10px 12px; align-items:start}
+.mcol{display:grid; gap:10px}
+.mhead{font-family:"Kanit",sans-serif; font-size:.78rem; color:var(--ink-2); text-align:center; padding-bottom:2px}
+.mitem{display:flex; align-items:center; gap:9px; text-align:start; border:2px solid var(--line); background:var(--surface-3); color:var(--ink); border-radius:14px; padding:12px; min-height:62px; font-size:1rem; line-height:1.4; transition:border-color .15s, background .15s, transform .1s}
+.mitem:hover:not(:disabled){border-color:var(--brand)}
+.mitem:active:not(:disabled){transform:scale(.98)}
+.mitem .pin{flex:none; width:22px; height:22px; border-radius:50%; border:2px dashed var(--line-strong); display:grid; place-items:center; font-family:"Kanit",sans-serif; font-size:.75rem; color:transparent}
+.mitem.sel{border-color:var(--brand); background:var(--brand-soft)}
+.mitem.tied .pin{border-style:solid; color:#fff}
+.mitem.p0{border-color:#D44B75} .mitem.p0 .pin{background:#D44B75; border-color:#D44B75}
+.mitem.p1{border-color:#2570C4} .mitem.p1 .pin{background:#2570C4; border-color:#2570C4}
+.mitem.p2{border-color:#38913F} .mitem.p2 .pin{background:#38913F; border-color:#38913F}
+.mitem.p3{border-color:#B4741C} .mitem.p3 .pin{background:#B4741C; border-color:#B4741C}
+.mitem.good{border-color:var(--ok); background:var(--ok-soft)}
+.mitem.good .pin{background:var(--ok); border-color:var(--ok); border-style:solid; color:#fff}
+.mitem.bad{border-color:var(--no); background:var(--no-soft)}
+.mitem.bad .pin{background:var(--no); border-color:var(--no); border-style:solid; color:#fff}
+.mitem:disabled{cursor:default}
+.pairlist{margin:8px 0 0; padding:0; list-style:none; display:grid; gap:5px; font-size:.95rem}
+.pairlist li b{color:var(--ok)}
+
+/* ---- result ---- */
+.score{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-l); padding:28px 22px; text-align:center; box-shadow:var(--shadow); margin-top:22px}
+.score .big{font-family:"Kanit",sans-serif; font-size:3.4rem; font-weight:600; line-height:1; color:var(--brand)}
+.score .of{font-size:1.1rem; color:var(--ink-2)}
+.stars{display:flex; justify-content:center; gap:8px; margin:14px 0 6px}
+.stars svg{width:38px; height:38px; color:var(--line-strong)}
+.stars svg.lit{color:var(--gold)}
+.score h3{font-family:"Mali",sans-serif; font-size:1.3rem; margin-top:8px}
+.score p{margin:.3rem 0 0; color:var(--ink-2)}
+.bd{margin-top:18px; display:grid; gap:10px}
+.bdrow{display:flex; align-items:center; gap:11px; font-size:.92rem}
+.bdrow .nm{flex:1 1 110px; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.bdrow .tr{flex:2 1 90px; height:9px; border-radius:99px; background:var(--surface-2); overflow:hidden}
+.bdrow .tr span{display:block; height:100%; background:var(--uc)}
+.bdrow .vl{font-family:"Kanit",sans-serif; font-size:.85rem; color:var(--ink-2); width:52px; text-align:end}
+.wrongs{margin-top:22px}
+.wrongs details{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-m); padding:14px 16px; margin-bottom:9px}
+.wrongs summary{cursor:pointer; font-family:"Mali",sans-serif; font-size:1.02rem}
+.wrongs .ans{margin:10px 0 0; font-size:.95rem}
+.wrongs .ans b{color:var(--ok)}
+.wrongs .ans i{font-style:normal; color:var(--no)}
+
+/* ---- teacher ---- */
+.tstats{display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); gap:12px; margin-top:18px}
+.stat{background:var(--surface); border:1px solid var(--line); border-radius:var(--r-m); padding:15px}
+.stat .n{font-family:"Kanit",sans-serif; font-size:1.9rem; font-weight:600; line-height:1.1; display:block}
+.stat .l{font-size:.85rem; color:var(--ink-2)}
+.tblwrap{margin-top:18px; overflow-x:auto; border:1px solid var(--line); border-radius:var(--r-m); background:var(--surface)}
+table{border-collapse:collapse; width:100%; min-width:560px}
+th,td{padding:11px 13px; text-align:start; border-bottom:1px solid var(--line); font-size:.93rem; white-space:nowrap}
+th{font-family:"Kanit",sans-serif; font-size:.8rem; color:var(--ink-2); background:var(--surface-3); position:sticky; top:0}
+td.n{font-family:"Kanit",sans-serif; font-variant-numeric:tabular-nums}
+tr:last-child td{border-bottom:none}
+.pill{display:inline-block; border-radius:999px; padding:2px 10px; font-family:"Kanit",sans-serif; font-size:.8rem}
+.pill.g{background:var(--ok-soft); color:var(--ok)}
+.pill.y{background:var(--gold-soft); color:var(--gold)}
+.pill.r{background:var(--no-soft); color:var(--no)}
+.empty{margin-top:18px; background:var(--surface); border:1px dashed var(--line-strong); border-radius:var(--r-m); padding:26px; text-align:center; color:var(--ink-2)}
+.note{margin-top:14px; font-size:.85rem; color:var(--ink-3)}
+.tacts{display:flex; gap:9px; margin-top:16px; flex-wrap:wrap}
+footer{margin-top:44px; padding-top:18px; border-top:1px solid var(--line); font-size:.83rem; color:var(--ink-3); display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap}
+@media (prefers-reduced-motion: reduce){*{animation:none!important; transition:none!important}}
+.pop{animation:pop .3s ease}
+@keyframes pop{0%{transform:scale(.9)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
+</style>
+
+<div class="bar">
+  <div class="bar-in">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-9.5A4.5 4.5 0 0 1 12 8a4.5 4.5 0 0 1 7 3.5C19 16.5 12 21 12 21Z"/><path d="M3 12h3l1.5-3 2 6 1.5-3h3"/></svg>
+    </div>
+    <div>
+      <h1>ห้องติวสุขศึกษา ป.1</h1>
+      <div class="sub" id="whoLine">ทบทวน · ทำข้อสอบ · เก็บดาว</div>
+    </div>
+    <div class="spacer"></div>
+    <div class="starbox" id="starBox" title="ดาวสะสม">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.7 5.9 6.3.7-4.7 4.3 1.3 6.3L12 16.6l-5.6 3.2 1.3-6.3L3 9.2l6.3-.7Z"/></svg>
+      <span class="num" id="starNum">0</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ============ HOME ============ -->
+<section id="v-home">
+  <div class="hero">
+    <div>
+      <div class="eyebrow">สุขศึกษาและพลศึกษา · ชั้นประถมศึกษาปีที่ 1</div>
+      <h2>ทบทวนก่อน แล้วลองทำข้อสอบดูนะ</h2>
+      <p>เลือกหน่วยที่อยากติว อ่านสรุปสั้น ๆ แล้วทำข้อสอบ 10 ข้อ มีทั้งเลือกตอบ ถูก–ผิด เติมคำ เรียงลำดับ และจับคู่ เหมือนใบงานในห้องเรียน ตอบแล้วรู้เฉลยทันทีพร้อมคำอธิบาย</p>
+    </div>
+  </div>
+
+  <div class="namecard">
+    <label for="nameInput">ชื่อของหนู</label>
+    <input type="text" id="nameInput" placeholder="เช่น ด.ญ. มะลิ" autocomplete="off" maxlength="40">
+    <button class="btn" id="saveName" type="button">บันทึกชื่อ</button>
+    <p class="hint" id="nameHint" hidden>ใส่ชื่อก่อนนะ ครูจะได้เห็นคะแนนของหนู</p>
+  </div>
+
+  <div class="sec-head">
+    <h3>4 หน่วยการเรียนรู้</h3>
+    <span class="eyebrow" id="bankCount"></span>
+  </div>
+  <div class="grid" id="unitGrid"></div>
+
+  <div class="mixed">
+    <div style="flex:1 1 220px">
+      <h4>ข้อสอบรวม 20 ข้อ</h4>
+      <p>สุ่มจากทั้ง 4 หน่วย ครบทั้ง 5 แนวข้อสอบ เหมือนข้อสอบจริงปลายภาค</p>
+    </div>
+    <button class="btn btn-primary btn-lg" id="startMixed" type="button">เริ่มข้อสอบรวม</button>
+  </div>
+
+  <div class="sec-head"><h3>สำหรับคุณครู</h3></div>
+  <p style="margin:0;color:var(--ink-2)">ดูคะแนนของนักเรียนทุกคน หน่วยที่ทำได้ดี และหน่วยที่ควรสอนซ้ำ</p>
+  <div class="tacts"><button class="btn" id="goTeacher" type="button">เปิดหน้าสรุปของครู</button></div>
+</section>
+
+<!-- ============ REVIEW ============ -->
+<section id="v-review" hidden>
+  <div class="crumbs"><button class="btn btn-ghost" data-home type="button">← กลับหน้าหลัก</button></div>
+  <div class="review-head" id="reviewHead"></div>
+  <div id="reviewBody"></div>
+  <div class="ready">
+    <button class="btn btn-primary btn-lg" id="reviewToQuiz" type="button">พร้อมแล้ว ทำข้อสอบเลย</button>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section id="v-quiz" hidden>
+  <div class="crumbs"><button class="btn btn-ghost" data-home type="button">← ออกจากข้อสอบ</button></div>
+  <div class="qtop">
+    <div class="dots" id="dots" aria-hidden="true"></div>
+    <div class="qcount num" id="qCount"></div>
+  </div>
+  <div class="qcard">
+    <div class="qtagline" id="qTag"></div>
+    <p class="qtext" id="qText"></p>
+    <div class="opts" id="opts"></div>
+    <div id="fb" aria-live="polite"></div>
+    <div class="qnav" id="qnav" hidden><button class="btn btn-primary btn-lg" id="nextBtn" type="button">ข้อต่อไป →</button></div>
+  </div>
+</section>
+
+<!-- ============ RESULT ============ -->
+<section id="v-result" hidden>
+  <div class="score">
+    <div class="eyebrow" id="rsTitle">ผลการทำข้อสอบ</div>
+    <div><span class="big num" id="rsScore">0</span><span class="of num" id="rsOf"></span></div>
+    <div class="stars" id="rsStars"></div>
+    <h3 id="rsMsg"></h3>
+    <p id="rsSub"></p>
+  </div>
+  <div class="bd" id="rsBreak"></div>
+  <div class="wrongs" id="rsWrongs"></div>
+  <div class="ready">
+    <button class="btn btn-primary btn-lg" id="again" type="button">ทำอีกครั้ง</button>
+    <button class="btn btn-lg" data-home type="button">กลับหน้าหลัก</button>
+  </div>
+</section>
+
+<!-- ============ TEACHER ============ -->
+<section id="v-teacher" hidden>
+  <div class="crumbs"><button class="btn btn-ghost" data-home type="button">← กลับหน้าหลัก</button></div>
+  <div class="eyebrow">หน้าสรุปสำหรับครู</div>
+  <h2 style="font-size:1.6rem">ผลการติวของนักเรียน</h2>
+  <div class="tstats" id="tStats"></div>
+  <div class="sec-head"><h3>ความแม่นยำรายหน่วย (ทั้งห้อง)</h3></div>
+  <div class="bd" id="tUnits"></div>
+  <div class="sec-head"><h3>รายบุคคล</h3></div>
+  <div id="tTable"></div>
+  <div class="tacts">
+    <button class="btn" id="tRefresh" type="button">รีเฟรชข้อมูล</button>
+    <button class="btn" id="tCsv" type="button" hidden>ดาวน์โหลด CSV</button>
+  </div>
+  <p class="note" id="tNote"></p>
+</section>
+
+<footer>
+  <span>เนื้อหาอ้างอิงจากสื่อการสอนสุขศึกษาและพลศึกษา ชั้น ป.1</span>
+  <span class="num" id="foot"></span>
+</footer>
+</div>
+
+<script>
+"use strict";
+
+/* ---------------- ข้อมูลหน่วยการเรียนรู้ ---------------- */
+const UNITS = {
+  u1:{name:"ชีวิตและครอบครัว", short:"ครอบครัว", color:"var(--u1)", soft:"var(--u1-soft)", n:1,
+      blurb:"ครอบครัวเดี่ยว ครอบครัวขยาย และหน้าที่ของเราที่บ้าน"},
+  u2:{name:"อารมณ์และความรู้สึก", short:"อารมณ์", color:"var(--u2)", soft:"var(--u2-soft)", n:2,
+      blurb:"อารมณ์สุข อารมณ์ทุกข์ และวิธีจัดการเมื่อไม่สบายใจ"},
+  u3:{name:"การเจริญเติบโตและอวัยวะภายนอก", short:"ร่างกาย", color:"var(--u3)", soft:"var(--u3-soft)", n:3,
+      blurb:"ตา หู จมูก ปาก ลิ้น มือ เท้า ผิวหนัง และการเติบโตตามวัย"},
+  u4:{name:"สุขภาพช่องปากและฟัน", short:"ฟัน", color:"var(--u4)", soft:"var(--u4-soft)", n:4,
+      blurb:"ฟันน้ำนม ฟันแท้ และการแปรงฟันอย่างถูกวิธี"}
+};
+const UK = ["u1","u2","u3","u4"];
+
+/* ---------------- เนื้อหาโหมดทบทวน ---------------- */
+const REVIEW = {
+u1:[
+ {h:"ครอบครัวคืออะไร", items:[
+   "<b>ครอบครัว</b> คือ คนที่อยู่รวมกันและมีความผูกพันกัน เช่น พ่อ แม่ ลูก",
+   "ครอบครัวคือความรัก ความห่วงใย และการดูแลซึ่งกันและกัน",
+   "ครอบครัวอบอุ่น ทำให้สังคมเข้มแข็ง"]},
+ {h:"ครอบครัวมี 2 แบบ", keys:[{n:"เดี่ยว",l:"พ่อ แม่ ลูก — ครอบครัวเล็ก"},{n:"ขยาย",l:"เพิ่ม ปู่ ย่า ตา ยาย และญาติ — ครอบครัวใหญ่"}], items:[
+   "<b>ครอบครัวเดี่ยว</b> เป็นครอบครัวเล็ก ประกอบด้วย พ่อ แม่ และลูก",
+   "<b>ครอบครัวขยาย</b> เป็นครอบครัวใหญ่ มี ปู่ ย่า ตา ยาย พ่อ แม่ ลูก และญาติอยู่ด้วยกัน"]},
+ {h:"หน้าที่ของหนูที่บ้าน 5 ข้อ", items:[
+   "ช่วยพ่อแม่ทำงานบ้าน เช่น กวาดบ้าน ถูบ้าน รดน้ำต้นไม้ เลี้ยงสัตว์",
+   "เก็บของเล่นและของใช้ให้เรียบร้อยทุกครั้งที่เล่นเสร็จ",
+   "เชื่อฟังคำสั่งสอนและเคารพผู้ใหญ่",
+   "ช่วยประหยัดค่าใช้จ่าย ไม่ซื้อของฟุ่มเฟือย",
+   "ดูแลตนเอง เช่น อาบน้ำ แปรงฟัน และแต่งตัวเอง"]}
+],
+u2:[
+ {h:"ธรรมชาติของอารมณ์", items:[
+   "<b>อารมณ์</b> คือ ความรู้สึกที่เปลี่ยนแปลงอยู่เรื่อย ๆ เช่น ดีใจ เสียใจ โกรธ สนุกสนาน",
+   "อารมณ์ของคนเรา <b>เปลี่ยนแปลงได้ทุกเวลา</b>",
+   "อารมณ์ขึ้นอยู่กับ <b>เหตุการณ์ที่ได้พบและได้เจอ</b>",
+   "อารมณ์แบ่งได้เป็น <b>2 ประเภทใหญ่</b> คือ อารมณ์สุข และอารมณ์ทุกข์"]},
+ {h:"อารมณ์ที่ทำให้มีความสุข", keys:[{n:"ดีใจ",l:"ทำการบ้านเสร็จแล้ว"},{n:"สนุกสนาน",l:"ฟังเพลงที่ชอบ"},{n:"ภูมิใจ",l:"ทำสิ่งที่ตั้งใจสำเร็จ"}], items:[
+   "การได้อยู่กับครอบครัวก็ทำให้เรามีความสุข"]},
+ {h:"อารมณ์ที่ทำให้เป็นทุกข์", items:[
+   "ได้แก่ <b>เสียใจ โกรธ กลัว วิตกกังวล</b>",
+   "เมื่อเกิดอารมณ์เหล่านี้ เราอาจร้องไห้ ทำหน้าบึ้ง หรือเงียบไป"]},
+ {h:"จัดการอารมณ์ทุกข์ 5 วิธี", items:[
+   "เล่าเรื่องทุกข์ใจให้พ่อแม่หรือครูฟัง",
+   "เล่นกีฬาที่เราชอบ",
+   "ฟังเพลงสนุกสนาน",
+   "วาดรูประบายสี",
+   "เล่นหรือเลี้ยงสัตว์อย่างอ่อนโยน"]}
+],
+u3:[
+ {h:"อวัยวะภายนอก หน้าที่ และการดูแล", items:[
+   "<b>ตา</b> — มองเห็น · ดูแล: อ่านหนังสือในที่สว่าง ไม่จ้องหน้าจอนาน ๆ · เลี่ยง: ขยี้ตา ใช้สายตาหนัก",
+   "<b>หู</b> — ได้ยินเสียง · ดูแล: ไม่แคะหู รักษาความสะอาด · เลี่ยง: เสียงดังเกินไป",
+   "<b>จมูก</b> — หายใจและดมกลิ่น · ดูแล: รักษาความสะอาด ไม่สั่งน้ำมูกแรง ๆ · เลี่ยง: ฝุ่น ควัน สารเคมี",
+   "<b>ปาก</b> — กินอาหาร พูดคุย · ดูแล: แปรงฟันหลังอาหาร · เลี่ยง: ของร้อน ของแข็ง ของหวานมากเกินไป",
+   "<b>ลิ้น</b> — รับรสอาหาร · ดูแล: รักษาความสะอาด ดื่มน้ำสะอาด · เลี่ยง: อาหารร้อนจัด เผ็ดจัด",
+   "<b>มือ</b> — หยิบจับ ทำกิจกรรม · ดูแล: ล้างมือก่อนกินอาหารและหลังเข้าห้องน้ำ · เลี่ยง: จับสิ่งสกปรก ของมีคม",
+   "<b>เท้า</b> — เดิน วิ่ง เคลื่อนไหว · ดูแล: สวมรองเท้าถูกขนาด รักษาความสะอาด · เลี่ยง: เดินในที่อันตราย ไม่สวมรองเท้า",
+   "<b>ผิวหนัง</b> — ปกป้องร่างกายจากแสงแดดและเชื้อโรค · ดูแล: อาบน้ำให้สะอาด ทาครีมกันแดด · เลี่ยง: แดดจัด สิ่งสกปรก การเกา"]},
+ {h:"การเจริญเติบโตตามวัย", keys:[{n:"0–1 ปี",l:"วัยทารก"},{n:"2–5 ปี",l:"วัยก่อนเรียน"},{n:"6–12 ปี",l:"วัยเรียน"}], items:[
+   "<b>วัยทารก</b> ตัวเล็ก น้ำหนักเพิ่มขึ้น เริ่มนั่ง เริ่มคลาน เริ่มพูด",
+   "<b>วัยก่อนเรียน</b> ตัวสูงขึ้น กล้ามเนื้อแข็งแรงขึ้น เคลื่อนไหวได้ดีขึ้น เรียนรู้สิ่งต่าง ๆ รอบตัว",
+   "<b>วัยเรียน</b> สูงขึ้นอย่างต่อเนื่อง เรียนรู้ได้มากขึ้น ควรกินอาหารให้ครบและออกกำลังกายสม่ำเสมอ"]}
+],
+u4:[
+ {h:"รู้จักฟันของเรา", keys:[{n:"20",l:"ฟันน้ำนม (ซี่)"},{n:"32",l:"ฟันแท้ (ซี่)"}], items:[
+   "<b>ฟันน้ำนม</b> คือฟันชุดแรกของเด็ก มี 20 ซี่ เริ่มขึ้นเมื่ออายุประมาณ 6 เดือน และขึ้นครบประมาณ 2–3 ปี",
+   "ฟันน้ำนมช่วยเคี้ยวอาหาร ช่วยให้พูดชัดเจน และเป็นที่อยู่ของฟันแท้ในอนาคต",
+   "<b>ฟันแท้</b> คือฟันถาวร มี 32 ซี่ เริ่มขึ้นเมื่ออายุประมาณ 6 ปี และขึ้นครบประมาณ 18–21 ปี",
+   "ฟันแท้แข็งแรงกว่าฟันน้ำนม และใช้ไปตลอดชีวิต จึงต้องดูแลให้ดี"]},
+ {h:"แปรงฟันอย่างถูกวิธี", items:[
+   "แปรงฟันอย่างน้อย <b>วันละ 2 ครั้ง</b> คือ ตอนเช้าและก่อนนอน",
+   "1. บีบยาสีฟันขนาดเท่า <b>เมล็ดถั่วเขียว</b> ลงบนแปรง",
+   "2. แปรงด้านนอกของฟัน  3. แปรงด้านในของฟัน  4. แปรงด้านบดเคี้ยว",
+   "5. แปรงลิ้นเบา ๆ ให้ปากสะอาด  6. บ้วนปากด้วยน้ำสะอาด"]},
+ {h:"ดูแลและข้อควรระวัง", items:[
+   "อวัยวะในช่องปากที่ต้องดูแล ได้แก่ <b>ฟัน เหงือก ลิ้น กระพุ้งแก้ม</b>",
+   "ใช้ไหมขัดฟันเมื่อมีเศษอาหาร และพบทันตแพทย์ <b>ทุก 6 เดือน</b>",
+   "ใช้แปรงสีฟันของตนเอง ไม่ใช้ร่วมกับผู้อื่น และเปลี่ยนแปรงเมื่อขนแปรงบาน",
+   "ไม่กินขนมหวานบ่อย ๆ ไม่ดื่มน้ำอัดลม ไม่ใช้ฟันกัดของแข็ง เช่น น้ำแข็ง",
+   "หากปวดฟัน ควรรีบไปพบทันตแพทย์"]}
+]
+};
+
+/* ---------------- คลังข้อสอบ ---------------- */
+const BANK = {
+u1:[
+ ["ครอบครัว หมายถึงข้อใด",["คนที่อยู่รวมกันและมีความผูกพันกัน","คนที่นั่งรถคันเดียวกัน","คนที่เรียนห้องเดียวกัน","คนที่ชอบกินอาหารเหมือนกัน"],0,"ครอบครัว คือ คนที่อยู่รวมกันและมีความผูกพันกัน เช่น พ่อ แม่ ลูก"],
+ ["ครอบครัวที่มีพ่อ แม่ และลูก เรียกว่าอะไร",["ครอบครัวเดี่ยว","ครอบครัวขยาย","ครอบครัวใหญ่","ครอบครัวญาติ"],0,"ครอบครัวเดี่ยวเป็นครอบครัวเล็ก ประกอบด้วย พ่อ แม่ และลูก"],
+ ["ครอบครัวที่มีปู่ ย่า ตา ยาย อยู่ด้วย เรียกว่าอะไร",["ครอบครัวขยาย","ครอบครัวเดี่ยว","ครอบครัวเล็ก","ครอบครัวชั่วคราว"],0,"ครอบครัวขยายเป็นครอบครัวใหญ่ มีปู่ ย่า ตา ยาย พ่อ แม่ ลูก และญาติ"],
+ ["ข้อใดเป็นสมาชิกของครอบครัวขยาย",["ปู่ ย่า ตา ยาย","เพื่อนที่โรงเรียน","ครูประจำชั้น","คนขายของหน้าโรงเรียน"],0,"ครอบครัวขยายมีปู่ ย่า ตา ยาย และญาติอยู่ร่วมกับพ่อ แม่ ลูก"],
+ ["ครอบครัวเดี่ยวมีขนาดอย่างไรเมื่อเทียบกับครอบครัวขยาย",["เล็กกว่า","ใหญ่กว่า","เท่ากันเสมอ","ไม่สามารถเทียบได้"],0,"ครอบครัวเดี่ยวเป็นครอบครัวเล็ก ส่วนครอบครัวขยายเป็นครอบครัวใหญ่"],
+ ["ข้อใดคือหน้าที่ของเด็ก ๆ ที่บ้าน",["ช่วยพ่อแม่ทำงานบ้าน","ดูโทรทัศน์ทั้งวัน","นอนอย่างเดียว","รอให้พ่อแม่ทำให้ทุกอย่าง"],0,"เด็กดีช่วยพ่อแม่ทำงานบ้าน เช่น กวาดบ้าน ถูบ้าน รดน้ำต้นไม้"],
+ ["เมื่อเล่นของเล่นเสร็จแล้ว ควรทำอย่างไร",["เก็บของเล่นให้เรียบร้อย","ทิ้งไว้กลางบ้าน","ให้น้องเก็บแทน","เอาไปซ่อนใต้เตียง"],0,"เล่นเสร็จต้องเก็บของเล่นและของใช้ให้เรียบร้อยทุกครั้ง"],
+ ["การช่วยประหยัดค่าใช้จ่ายในบ้าน ทำได้อย่างไร",["ไม่ซื้อของฟุ่มเฟือย","ขอเงินไปซื้อขนมทุกวัน","เปิดไฟทิ้งไว้","เปิดน้ำแรง ๆ"],0,"ใช้เงินอย่างรู้คุณค่า ไม่ซื้อของฟุ่มเฟือย"],
+ ["เมื่อผู้ใหญ่สั่งสอน เราควรทำอย่างไร",["เชื่อฟังและเคารพผู้ใหญ่","เถียงกลับทันที","เดินหนีไปเลย","ทำหูทวนลม"],0,"เด็กดีเชื่อฟังคำสั่งสอนและเคารพผู้ใหญ่"],
+ ["ข้อใดคือการดูแลตนเอง",["อาบน้ำ แปรงฟัน แต่งตัวเอง","ให้แม่ทำให้ทุกอย่าง","ไม่อาบน้ำก็ได้","ใส่ชุดเดิมทุกวัน"],0,"การดูแลตนเอง เช่น อาบน้ำ แปรงฟัน และแต่งตัวเองให้เรียบร้อย"],
+ ["สิ่งใดทำให้ครอบครัวอบอุ่น",["สมาชิกช่วยเหลือกันและทำหน้าที่ของตน","ต่างคนต่างอยู่","ทะเลาะกันทุกวัน","ไม่คุยกันเลย"],0,"สมาชิกในครอบครัวควรช่วยเหลือกันและทำหน้าที่ของตนเอง"],
+ ["ถ้าเห็นแม่กำลังกวาดบ้าน เด็กดีควรทำอย่างไร",["เข้าไปช่วยแม่","แกล้งไม่เห็น","เดินข้ามไปเล่นเกม","บอกให้แม่รีบ ๆ"],0,"การช่วยพ่อแม่ทำงานบ้านเป็นหน้าที่ของเด็ก ๆ"],
+ ["ข้อใด <b>ไม่ใช่</b> หน้าที่ที่ดีของเด็กในบ้าน",["ทิ้งของเล่นไว้กลางบ้าน","ช่วยรดน้ำต้นไม้","เก็บที่นอนของตัวเอง","ช่วยเลี้ยงสัตว์"],0,"การทิ้งของเล่นเกลื่อนบ้านทำให้บ้านไม่น่าอยู่ ควรเก็บให้เรียบร้อย"],
+ ["ครอบครัวมีความสำคัญอย่างไร",["เป็นจุดเริ่มต้นของความรักและการดูแลกัน","เป็นที่เก็บของเล่น","เป็นที่ดูโทรทัศน์","เป็นที่นอนเท่านั้น"],0,"ครอบครัวคือจุดเริ่มต้นของความสุข ความรัก ความห่วงใย และการดูแลกัน"],
+ ["บ้านน่าอยู่เพราะเหตุใด",["เพราะทุกคนช่วยกัน","เพราะบ้านหลังใหญ่","เพราะมีของเล่นเยอะ","เพราะอยู่ใกล้ร้านค้า"],0,"บ้านน่าอยู่เพราะทุกคนช่วยกันและทำหน้าที่ของตนเอง"],
+ ["รดน้ำต้นไม้ ถูบ้าน เลี้ยงสัตว์ จัดเป็นงานประเภทใด",["งานบ้านที่ช่วยพ่อแม่ได้","งานของครู","งานของหมอ","งานที่เด็กทำไม่ได้"],0,"ทั้งหมดเป็นงานบ้านที่เด็ก ๆ ช่วยพ่อแม่ทำได้"]
+],
+u2:[
+ ["อารมณ์ คืออะไร",["ความรู้สึกที่เปลี่ยนแปลงอยู่เรื่อย ๆ","อาหารที่เรากิน","เสื้อผ้าที่เราใส่","วิชาที่เราเรียน"],0,"อารมณ์ คือ ความรู้สึกที่เปลี่ยนแปลงอยู่เรื่อย ๆ เช่น ดีใจ เสียใจ โกรธ สนุกสนาน"],
+ ["อารมณ์ของคนเราเปลี่ยนแปลงได้เมื่อใด",["ได้ทุกเวลา","เฉพาะตอนเช้า","ปีละครั้ง","เปลี่ยนไม่ได้เลย"],0,"อารมณ์ของคนเราเปลี่ยนแปลงได้ทุกเวลา"],
+ ["อารมณ์ของเราขึ้นอยู่กับสิ่งใด",["เหตุการณ์ที่ได้พบและได้เจอ","สีของเสื้อ","จำนวนเพื่อน","ขนาดของบ้าน"],0,"อารมณ์ขึ้นอยู่กับเหตุการณ์ที่ได้พบและได้เจอ"],
+ ["อารมณ์แบ่งได้เป็นกี่ประเภทใหญ่",["2 ประเภท","3 ประเภท","4 ประเภท","5 ประเภท"],0,"อารมณ์แบ่งได้ 2 ประเภทใหญ่ คือ อารมณ์สุข และอารมณ์ทุกข์"],
+ ["ข้อใดเป็นอารมณ์ที่ทำให้มีความสุข",["ดีใจ","กลัว","โกรธ","วิตกกังวล"],0,"อารมณ์สุข ได้แก่ ดีใจ สนุกสนาน และความภูมิใจ"],
+ ["ทำการบ้านเสร็จแล้วมักรู้สึกอย่างไร",["ดีใจ","เสียใจ","โกรธ","กลัว"],0,"ทำการบ้านเสร็จเป็นเหตุการณ์ที่ทำให้เกิดอารมณ์ดีใจ"],
+ ["ข้อใดเป็นอารมณ์ที่ทำให้เป็นทุกข์",["กลัว","ดีใจ","สนุกสนาน","ภูมิใจ"],0,"อารมณ์ทุกข์ ได้แก่ เสียใจ โกรธ กลัว และวิตกกังวล"],
+ ["เมื่อของเล่นที่รักหายไป เรามักรู้สึกอย่างไร",["เสียใจ","สนุกสนาน","ภูมิใจ","ดีใจ"],0,"การสูญเสียสิ่งที่รักทำให้เกิดอารมณ์เสียใจ ซึ่งเป็นอารมณ์ทุกข์"],
+ ["เมื่อมีอารมณ์ทุกข์ เรามักแสดงออกอย่างไร",["ร้องไห้ ทำหน้าบึ้ง หรือเงียบไป","หัวเราะเสียงดัง","ปรบมือ","กระโดดโลดเต้น"],0,"เมื่อเกิดอารมณ์ทุกข์ เราอาจร้องไห้ ทำหน้าบึ้ง หรือเงียบไป"],
+ ["เมื่อรู้สึกไม่สบายใจ ควรทำอย่างไรเป็นอันดับแรก",["เล่าให้พ่อแม่หรือครูฟัง","เก็บไว้คนเดียว","ร้องไห้จนหลับ","โกรธใส่เพื่อน"],0,"เมื่อไม่สบายใจ ควรบอกพ่อแม่หรือครู เพื่อให้ช่วยเราได้"],
+ ["ข้อใดเป็นวิธีจัดการอารมณ์ทุกข์ที่เหมาะสม",["วาดรูประบายสี","ทุบข้าวของ","แกล้งเพื่อน","ตะโกนใส่ผู้ใหญ่"],0,"การวาดรูประบายสีเป็นหนึ่งใน 5 วิธีจัดการอารมณ์ทุกข์"],
+ ["การเล่นกีฬาที่เราชอบ ช่วยเรื่องใด",["ช่วยให้อารมณ์ดีขึ้น","ทำให้โกรธมากขึ้น","ทำให้เสียใจ","ทำให้กลัว"],0,"การเล่นกีฬาที่ชอบช่วยผ่อนคลายและทำให้อารมณ์ดีขึ้น"],
+ ["เมื่อโกรธเพื่อน ควรทำอย่างไร",["ใจเย็น ๆ แล้วบอกความรู้สึกด้วยคำพูดดี ๆ","ตีเพื่อนทันที","แกล้งเพื่อนกลับ","ไม่คุยกับเพื่อนตลอดไป"],0,"ควรจัดการอารมณ์โกรธด้วยวิธีที่ไม่ทำร้ายใคร เช่น พูดคุยกันดี ๆ"],
+ ["การเลี้ยงสัตว์เลี้ยงควรทำอย่างไร",["เล่นและดูแลอย่างอ่อนโยน","ดึงหางเล่น","ขังไว้ไม่ให้อาหาร","ตีเมื่อไม่พอใจ"],0,"การเล่นหรือเลี้ยงสัตว์อย่างอ่อนโยนช่วยให้อารมณ์ดีขึ้น"],
+ ["ข้อใด <b>ไม่ใช่</b> วิธีจัดการอารมณ์ทุกข์ที่ดี",["เก็บไว้คนเดียวไม่บอกใคร","ฟังเพลงสนุกสนาน","เล่นกีฬาที่ชอบ","เล่าให้ครูฟัง"],0,"การเก็บความทุกข์ไว้คนเดียวไม่ช่วยให้ดีขึ้น ควรเล่าให้ผู้ใหญ่ฟัง"],
+ ["การรู้เท่าทันอารมณ์ของตนเองมีประโยชน์อย่างไร",["ช่วยให้ใช้ชีวิตอย่างมีความสุข","ทำให้เรียนเก่งทันที","ทำให้สูงขึ้น","ทำให้ฟันขาว"],0,"รู้เท่าทันอารมณ์ของตนเอง ช่วยให้เราใช้ชีวิตอย่างมีความสุข"]
+],
+u3:[
+ ["อวัยวะใดทำหน้าที่มองเห็นสิ่งต่าง ๆ",["ตา","หู","จมูก","ลิ้น"],0,"ตาทำหน้าที่มองเห็นสิ่งต่าง ๆ"],
+ ["อวัยวะใดทำหน้าที่ได้ยินเสียง",["หู","ตา","มือ","เท้า"],0,"หูทำหน้าที่ได้ยินเสียง"],
+ ["จมูกทำหน้าที่ใด",["หายใจและดมกลิ่น","รับรสอาหาร","ได้ยินเสียง","หยิบจับสิ่งของ"],0,"จมูกทำหน้าที่หายใจและดมกลิ่น"],
+ ["ลิ้นทำหน้าที่ใด",["ช่วยรับรสอาหาร","มองเห็น","ได้ยินเสียง","เดินและวิ่ง"],0,"ลิ้นช่วยรับรสอาหาร"],
+ ["ผิวหนังมีหน้าที่อะไร",["ปกป้องร่างกายจากแสงแดดและเชื้อโรค","ช่วยให้ได้ยิน","ช่วยให้ดมกลิ่น","ช่วยเคี้ยวอาหาร"],0,"ผิวหนังปกป้องร่างกายจากอันตราย เช่น แสงแดดและเชื้อโรค"],
+ ["การดูแลตาที่ถูกต้องคือข้อใด",["อ่านหนังสือในที่สว่าง","อ่านหนังสือในที่มืด","ขยี้ตาบ่อย ๆ","จ้องหน้าจอทั้งวัน"],0,"ควรอ่านหนังสือในที่สว่าง และไม่จ้องหน้าจอนาน ๆ"],
+ ["ข้อใดควรหลีกเลี่ยงเพื่อถนอมสายตา",["จ้องหน้าจอนาน ๆ","พักสายตาเป็นระยะ","อ่านหนังสือในที่สว่าง","มองต้นไม้สีเขียว"],0,"สิ่งที่ควรหลีกเลี่ยงคือการขยี้ตาและการใช้สายตาหนัก เช่น จ้องหน้าจอนาน ๆ"],
+ ["การดูแลหูที่ถูกต้องคือข้อใด",["ไม่แคะหูและรักษาความสะอาด","แคะหูทุกวัน","ฟังเพลงเสียงดังมาก","เอาของแหลมแหย่หู"],0,"ดูแลหูโดยไม่แคะหู รักษาความสะอาด และเลี่ยงเสียงดังเกินไป"],
+ ["ควรล้างมือเมื่อใด",["ก่อนกินอาหารและหลังเข้าห้องน้ำ","เฉพาะตอนมือเปื้อนสี","สัปดาห์ละครั้ง","ก่อนนอนเท่านั้น"],0,"ล้างมือให้สะอาดก่อนกินอาหารและหลังเข้าห้องน้ำ"],
+ ["การดูแลเท้าที่ถูกต้องคือข้อใด",["สวมรองเท้าที่ถูกขนาดและรักษาความสะอาด","เดินเท้าเปล่าในที่อันตราย","ใส่รองเท้าคับ ๆ","ไม่ต้องล้างเท้า"],0,"ควรสวมรองเท้าถูกขนาดและรักษาความสะอาดของเท้า"],
+ ["ข้อใดเป็นการดูแลผิวหนัง",["อาบน้ำให้สะอาดและสวมเสื้อผ้าที่สะอาด","เกาแรง ๆ เมื่อคัน","ตากแดดจัดนาน ๆ","ไม่อาบน้ำหลังเล่นกีฬา"],0,"ดูแลผิวหนังด้วยการอาบน้ำให้สะอาด ทาครีมกันแดด และสวมเสื้อผ้าสะอาด"],
+ ["เด็กวัยเรียนมีอายุประมาณเท่าใด",["6–12 ปี","0–1 ปี","2–5 ปี","13–18 ปี"],0,"วัยเรียนมีอายุประมาณ 6–12 ปี"],
+ ["วัยทารกมีอายุประมาณเท่าใด",["0–1 ปี","2–5 ปี","6–12 ปี","1–3 ปี"],0,"วัยทารกมีอายุประมาณ 0–1 ปี"],
+ ["ข้อใดเป็นพัฒนาการของวัยทารก",["เริ่มนั่ง เริ่มคลาน เริ่มพูด","วิ่งเล่นได้คล่อง","อ่านหนังสือได้","เขียนเรียงความได้"],0,"วัยทารกตัวเล็ก น้ำหนักเพิ่มขึ้น เริ่มนั่ง เริ่มคลาน และเริ่มพูด"],
+ ["เด็กวัยเรียนควรปฏิบัติอย่างไรให้เติบโตแข็งแรง",["กินอาหารให้ครบและออกกำลังกายสม่ำเสมอ","กินแต่ขนมหวาน","นอนดึกทุกคืน","ไม่ออกกำลังกายเลย"],0,"วัยเรียนควรกินอาหารครบและออกกำลังกายสม่ำเสมอ"],
+ ["อาหารแบบใดที่ควรหลีกเลี่ยงเพื่อดูแลลิ้น",["อาหารร้อนจัดและเผ็ดจัด","ผักและผลไม้","ข้าวสวย","น้ำสะอาด"],0,"สิ่งที่ควรหลีกเลี่ยงสำหรับลิ้นคืออาหารร้อนจัดและเผ็ดจัด"]
+],
+u4:[
+ ["ฟันน้ำนมมีทั้งหมดกี่ซี่",["20 ซี่","32 ซี่","28 ซี่","16 ซี่"],0,"ฟันน้ำนมมีทั้งหมด 20 ซี่"],
+ ["ฟันแท้มีทั้งหมดกี่ซี่",["32 ซี่","20 ซี่","24 ซี่","30 ซี่"],0,"ฟันแท้มีทั้งหมด 32 ซี่"],
+ ["ฟันชุดแรกของเด็กเรียกว่าอะไร",["ฟันน้ำนม","ฟันแท้","ฟันกราม","ฟันปลอม"],0,"ฟันน้ำนมคือฟันชุดแรกของเด็ก มี 20 ซี่"],
+ ["ฟันน้ำนมเริ่มขึ้นเมื่ออายุประมาณเท่าใด",["ประมาณ 6 เดือน","ประมาณ 6 ปี","ประมาณ 2 ปี","ประมาณ 12 ปี"],0,"ฟันน้ำนมเริ่มขึ้นเมื่ออายุประมาณ 6 เดือน และขึ้นครบประมาณ 2–3 ปี"],
+ ["ฟันแท้เริ่มขึ้นเมื่ออายุประมาณเท่าใด",["ประมาณ 6 ปี","ประมาณ 6 เดือน","ประมาณ 2 ปี","ประมาณ 18 ปี"],0,"ฟันแท้เริ่มขึ้นเมื่ออายุประมาณ 6 ปี และขึ้นครบประมาณ 18–21 ปี"],
+ ["ควรแปรงฟันอย่างน้อยวันละกี่ครั้ง",["2 ครั้ง","1 ครั้ง","3 ครั้ง","สัปดาห์ละครั้ง"],0,"ควรแปรงฟันอย่างน้อยวันละ 2 ครั้ง"],
+ ["เวลาใดเหมาะสมที่สุดในการแปรงฟัน",["ตอนเช้าและก่อนนอน","ตอนเล่นเท่านั้น","ตอนดูโทรทัศน์","สัปดาห์ละครั้ง"],0,"แปรงฟันตอนเช้าหลังตื่นนอน และก่อนเข้านอน"],
+ ["ควรบีบยาสีฟันปริมาณเท่าใด",["เท่าเมล็ดถั่วเขียว","เต็มหน้าแปรง","ครึ่งหลอด","ไม่ต้องใช้ยาสีฟัน"],0,"บีบยาสีฟันขนาดเท่าเมล็ดถั่วเขียวก็เพียงพอ"],
+ ["ขั้นตอนแรกของการแปรงฟันคือข้อใด",["บีบยาสีฟันลงบนแปรง","บ้วนน้ำให้สะอาด","แปรงลิ้นเบา ๆ","แปรงด้านในของฟัน"],0,"เริ่มจากบีบยาสีฟันลงบนแปรง แล้วจึงแปรงด้านนอก ด้านใน ด้านบดเคี้ยว แปรงลิ้น และบ้วนน้ำ"],
+ ["หลังแปรงฟันเสร็จควรทำอย่างไร",["บ้วนปากด้วยน้ำสะอาด","กินขนมหวานทันที","ดื่มน้ำอัดลม","เข้านอนเลยโดยไม่บ้วนปาก"],0,"หลังแปรงฟันควรบ้วนปากด้วยน้ำสะอาด"],
+ ["การแปรงลิ้นเบา ๆ ช่วยเรื่องใด",["ทำให้ปากสะอาด","ทำให้ผมยาว","ทำให้มือใหญ่","ทำให้รองเท้าใหม่"],0,"การแปรงลิ้นเบา ๆ ช่วยทำความสะอาดช่องปาก"],
+ ["ข้อใด <b>ไม่ควร</b> ปฏิบัติ",["ใช้แปรงสีฟันร่วมกับผู้อื่น","ใช้แปรงสีฟันของตนเอง","บ้วนปากหลังแปรงฟัน","แปรงฟันก่อนนอน"],0,"ควรใช้แปรงสีฟันของตนเอง ไม่ใช้ร่วมกับผู้อื่นเพราะอาจติดเชื้อโรค"],
+ ["ควรพบทันตแพทย์ทุกกี่เดือน",["ทุก 6 เดือน","ทุก 5 ปี","เฉพาะตอนปวดฟัน","ไม่ต้องพบเลย"],0,"ควรพบทันตแพทย์เพื่อตรวจฟันทุก 6 เดือน"],
+ ["อวัยวะใดอยู่ในช่องปากที่ต้องดูแล",["ฟัน เหงือก ลิ้น กระพุ้งแก้ม","ตา หู จมูก","มือ เท้า","ผิวหนัง ผม"],0,"อวัยวะในช่องปากที่ต้องดูแล ได้แก่ ฟัน เหงือก ลิ้น และกระพุ้งแก้ม"],
+ ["ข้อใดทำให้ฟันผุได้ง่ายที่สุด",["กินขนมหวานบ่อย ๆ และดื่มน้ำอัดลม","ดื่มน้ำสะอาด","กินผักและผลไม้","แปรงฟันวันละ 2 ครั้ง"],0,"ขนมหวานและน้ำอัดลมทำให้ฟันผุได้ง่าย ควรหลีกเลี่ยง"],
+ ["ควรเปลี่ยนแปรงสีฟันเมื่อใด",["เมื่อขนแปรงบาน","เมื่อด้ามเปลี่ยนสี","ทุก 3 ปี","ไม่ต้องเปลี่ยนเลย"],0,"เปลี่ยนแปรงสีฟันเมื่อขนแปรงบาน เพราะทำความสะอาดได้ไม่ดี"],
+ ["เมื่อปวดฟันควรทำอย่างไร",["รีบไปพบทันตแพทย์","กินขนมหวานให้ลืมปวด","ใช้ฟันกัดน้ำแข็ง","ไม่ต้องแปรงฟันอีก"],0,"หากมีอาการปวดฟัน ควรรีบพบทันตแพทย์"]
+]
+};
+
+/* ---------------- ข้อสอบแนวอื่น: ถูก-ผิด / เติมคำ / เรียงลำดับ / จับคู่ ---------------- */
+/* tf:    [ข้อความ, คำตอบจริงหรือเท็จ, คำอธิบาย]
+   fill:  [ประโยคที่มี ___ , [คำที่ถูก, ตัวลวง...], คำอธิบาย]
+   order: [คำสั่ง, [ขั้นที่1, ขั้นที่2, ...], คำอธิบาย]
+   match: [คำสั่ง, [[ซ้าย, ขวา], ...], คำอธิบาย]                                        */
+const XB = {
+u1:{
+ tf:[
+  ["ครอบครัวเดี่ยวประกอบด้วย พ่อ แม่ และลูก",true,"ครอบครัวเดี่ยวเป็นครอบครัวเล็ก มีพ่อ แม่ และลูก"],
+  ["ครอบครัวขยายมีเพียงพ่อ แม่ ลูก เท่านั้น",false,"ครอบครัวขยายมีปู่ ย่า ตา ยาย และญาติอยู่ด้วย"],
+  ["เล่นของเล่นเสร็จแล้วควรเก็บให้เรียบร้อย",true,"การเก็บของเล่นและของใช้เป็นหน้าที่ของเด็ก ๆ"],
+  ["การซื้อของฟุ่มเฟือยช่วยประหยัดค่าใช้จ่าย",false,"การประหยัดคือการไม่ซื้อของฟุ่มเฟือย ใช้เงินอย่างรู้คุณค่า"],
+  ["เราควรเชื่อฟังคำสั่งสอนและเคารพผู้ใหญ่",true,"การเชื่อฟังและเคารพผู้ใหญ่เป็นหน้าที่ของเด็กดี"],
+  ["เด็ก ป.1 ยังอาบน้ำและแต่งตัวเองไม่ได้ จึงไม่ต้องฝึก",false,"เด็ก ป.1 ควรฝึกดูแลตนเอง เช่น อาบน้ำ แปรงฟัน แต่งตัวเอง"],
+  ["ปู่ ย่า ตา ยาย เป็นสมาชิกของครอบครัวขยาย",true,"ครอบครัวขยายมีปู่ ย่า ตา ยาย พ่อ แม่ ลูก และญาติ"],
+  ["การรดน้ำต้นไม้เป็นงานบ้านที่เด็กช่วยพ่อแม่ได้",true,"งานบ้านที่เด็กช่วยได้ เช่น กวาดบ้าน ถูบ้าน รดน้ำต้นไม้ เลี้ยงสัตว์"]
+ ],
+ fill:[
+  ["ครอบครัวที่มีพ่อ แม่ และลูก เรียกว่า ครอบครัว___",["เดี่ยว","ขยาย","ใหญ่","ญาติ"],"ครอบครัวเดี่ยว = พ่อ แม่ ลูก"],
+  ["ครอบครัวที่มีปู่ ย่า ตา ยาย อยู่ด้วย เรียกว่า ครอบครัว___",["ขยาย","เดี่ยว","เล็ก","เดียว"],"ครอบครัวขยาย = ครอบครัวใหญ่ มีญาติอยู่ร่วมกัน"],
+  ["เล่นของเล่นเสร็จแล้วต้อง___ให้เรียบร้อย",["เก็บ","ทิ้ง","ซ่อน","โยน"],"เล่นเสร็จต้องเก็บของเล่นให้เรียบร้อยทุกครั้ง"],
+  ["เราควร___ผู้ใหญ่ในบ้าน",["เคารพ","เถียง","แกล้ง","หนี"],"เด็กดีเชื่อฟังคำสั่งสอนและเคารพผู้ใหญ่"],
+  ["การดูแลตนเอง เช่น อาบน้ำ ___ และแต่งตัวเอง",["แปรงฟัน","ดูทีวี","เล่นเกม","นอนดึก"],"การดูแลตนเอง ได้แก่ อาบน้ำ แปรงฟัน และแต่งตัวเอง"]
+ ],
+ order:[
+  ["เรียงลำดับกิจวัตรตอนเช้าของเด็กดีก่อนไปโรงเรียน",["ตื่นนอน","เก็บที่นอนให้เรียบร้อย","อาบน้ำและแปรงฟัน","แต่งตัวไปโรงเรียน","กินอาหารเช้า"],"เด็กดีดูแลตนเองได้ตั้งแต่ตื่นนอนจนถึงออกจากบ้าน"],
+  ["เรียงลำดับการช่วยแม่ล้างจานหลังกินข้าว",["เก็บจานจากโต๊ะอาหาร","ล้างจานด้วยน้ำยาล้างจาน","ล้างด้วยน้ำสะอาด","วางจานให้แห้ง"],"การช่วยพ่อแม่ทำงานบ้านเป็นหน้าที่ของเด็ก ๆ"]
+ ],
+ match:[
+  ["จับคู่คำกับความหมายให้ถูกต้อง",[["ครอบครัวเดี่ยว","พ่อ แม่ ลูก"],["ครอบครัวขยาย","มีปู่ ย่า ตา ยาย และญาติ"],["งานบ้าน","กวาดบ้าน ถูบ้าน รดน้ำต้นไม้"],["ประหยัด","ไม่ซื้อของฟุ่มเฟือย"]],"ทบทวนความหมายของครอบครัวแต่ละแบบและหน้าที่ที่บ้าน"],
+  ["จับคู่ความสัมพันธ์ในครอบครัวให้ถูกต้อง",[["พ่อของพ่อ","ปู่"],["แม่ของพ่อ","ย่า"],["พ่อของแม่","ตา"],["แม่ของแม่","ยาย"]],"ปู่ ย่า มาจากฝ่ายพ่อ ส่วน ตา ยาย มาจากฝ่ายแม่"]
+ ]
+},
+u2:{
+ tf:[
+  ["อารมณ์ของคนเราเปลี่ยนแปลงได้ทุกเวลา",true,"อารมณ์เปลี่ยนแปลงได้ทุกเวลา ขึ้นอยู่กับเหตุการณ์ที่พบ"],
+  ["อารมณ์แบ่งได้เป็น 2 ประเภทใหญ่",true,"แบ่งเป็นอารมณ์สุขและอารมณ์ทุกข์"],
+  ["ความกลัวเป็นอารมณ์ที่ทำให้มีความสุข",false,"ความกลัวเป็นอารมณ์ทุกข์ เช่นเดียวกับเสียใจ โกรธ วิตกกังวล"],
+  ["เมื่อไม่สบายใจ ควรเก็บไว้คนเดียวไม่ต้องบอกใคร",false,"ควรเล่าเรื่องทุกข์ใจให้พ่อแม่หรือครูฟัง"],
+  ["การวาดรูประบายสีช่วยให้อารมณ์ดีขึ้น",true,"วาดรูประบายสีเป็นหนึ่งใน 5 วิธีจัดการอารมณ์ทุกข์"],
+  ["เมื่อโกรธเพื่อน ควรตีเพื่อนให้หายโกรธ",false,"ควรใจเย็นและบอกความรู้สึกด้วยคำพูดดี ๆ ไม่ทำร้ายใคร"],
+  ["การเล่นกีฬาที่เราชอบช่วยคลายความทุกข์ได้",true,"เล่นกีฬาที่ชอบช่วยผ่อนคลายและทำให้อารมณ์ดีขึ้น"],
+  ["เราควรเล่นและเลี้ยงสัตว์อย่างอ่อนโยน",true,"การเล่นหรือเลี้ยงสัตว์อย่างอ่อนโยนช่วยให้อารมณ์ดีขึ้น"]
+ ],
+ fill:[
+  ["อารมณ์ คือ ความ___ที่เปลี่ยนแปลงอยู่เรื่อย ๆ",["รู้สึก","สูง","หนัก","สะอาด"],"อารมณ์ คือ ความรู้สึกที่เปลี่ยนแปลงอยู่เรื่อย ๆ"],
+  ["เมื่อทำสิ่งที่ตั้งใจสำเร็จ เราจะรู้สึก___",["ภูมิใจ","กลัว","โกรธ","เสียใจ"],"ความภูมิใจเป็นอารมณ์สุขอย่างหนึ่ง"],
+  ["เมื่อไม่สบายใจ ควรเล่าให้___หรือครูฟัง",["พ่อแม่","คนแปลกหน้า","ตุ๊กตา","ไม่มีใคร"],"ผู้ใหญ่ที่ไว้ใจได้จะช่วยเราคลายทุกข์"],
+  ["อารมณ์___ ได้แก่ เสียใจ โกรธ กลัว วิตกกังวล",["ทุกข์","สุข","ดี","สนุก"],"เสียใจ โกรธ กลัว วิตกกังวล จัดเป็นอารมณ์ทุกข์"],
+  ["อารมณ์ขึ้นอยู่กับ___ที่เราได้พบและได้เจอ",["เหตุการณ์","สีเสื้อ","อาหาร","รองเท้า"],"อารมณ์ขึ้นอยู่กับเหตุการณ์ที่ได้พบและได้เจอ"]
+ ],
+ order:[
+  ["เรียงลำดับวิธีจัดการเมื่อรู้สึกโกรธ",["หยุดและหายใจเข้าลึก ๆ","นับ 1 ถึง 10 ให้ใจเย็นลง","บอกความรู้สึกด้วยคำพูดดี ๆ","เล่าให้ครูหรือพ่อแม่ฟัง"],"จัดการอารมณ์โกรธโดยไม่ทำร้ายตนเองและผู้อื่น"],
+  ["เรียงลำดับการคลายความทุกข์ด้วยการวาดรูป",["เตรียมกระดาษและสี","วาดรูปสิ่งที่เราชอบ","ระบายสีให้สวยงาม","เล่าเรื่องในรูปให้พ่อแม่ฟัง"],"การวาดรูประบายสีและการเล่าให้ผู้ใหญ่ฟังช่วยคลายอารมณ์ทุกข์"]
+ ],
+ match:[
+  ["จับคู่เหตุการณ์กับอารมณ์ที่เกิดขึ้น",[["ทำการบ้านเสร็จแล้ว","ดีใจ"],["ของเล่นที่รักหาย","เสียใจ"],["ได้ยินเสียงดังตอนกลางคืน","กลัว"],["ฟังเพลงที่ชอบ","สนุกสนาน"]],"อารมณ์ของเราขึ้นอยู่กับเหตุการณ์ที่ได้พบ"],
+  ["จับคู่อารมณ์กับการแสดงออก",[["เสียใจ","ร้องไห้"],["โกรธ","ทำหน้าบึ้ง"],["กลัว","ตัวสั่น ไม่กล้าเข้าใกล้"],["ดีใจ","ยิ้มและหัวเราะ"]],"เมื่อเกิดอารมณ์ทุกข์ เราอาจร้องไห้ ทำหน้าบึ้ง หรือเงียบไป"]
+ ]
+},
+u3:{
+ tf:[
+  ["ผิวหนังช่วยปกป้องร่างกายจากแสงแดดและเชื้อโรค",true,"ผิวหนังปกป้องร่างกายจากอันตราย เช่น แสงแดดและเชื้อโรค"],
+  ["เราควรขยี้ตาบ่อย ๆ เพื่อให้ตาสะอาด",false,"การขยี้ตาเป็นสิ่งที่ควรหลีกเลี่ยง เพราะทำให้ตาอักเสบได้"],
+  ["ควรล้างมือก่อนกินอาหารและหลังเข้าห้องน้ำ",true,"การล้างมือช่วยป้องกันเชื้อโรคเข้าสู่ร่างกาย"],
+  ["การแคะหูบ่อย ๆ เป็นวิธีดูแลหูที่ถูกต้อง",false,"ดูแลหูโดยไม่แคะหู และรักษาความสะอาด"],
+  ["เด็กวัยเรียนมีอายุประมาณ 6–12 ปี",true,"วัยเรียนคือช่วงอายุประมาณ 6–12 ปี"],
+  ["ลิ้นทำหน้าที่ดมกลิ่น",false,"ลิ้นรับรสอาหาร ส่วนจมูกทำหน้าที่หายใจและดมกลิ่น"],
+  ["ควรสวมรองเท้าให้ถูกขนาดเพื่อดูแลเท้า",true,"สวมรองเท้าถูกขนาดและรักษาความสะอาดของเท้า"],
+  ["การอ่านหนังสือในที่มืดดีต่อสายตา",false,"ควรอ่านหนังสือในที่สว่าง และไม่จ้องหน้าจอนาน ๆ"]
+ ],
+ fill:[
+  ["___ ทำหน้าที่หายใจและดมกลิ่น",["จมูก","ตา","หู","เท้า"],"จมูกทำหน้าที่หายใจและดมกลิ่น"],
+  ["___ ทำหน้าที่ช่วยรับรสอาหาร",["ลิ้น","หู","มือ","ผิวหนัง"],"ลิ้นช่วยรับรสอาหาร"],
+  ["ควร___มือให้สะอาดก่อนกินอาหาร",["ล้าง","เกา","ขยี้","ตบ"],"ล้างมือก่อนกินอาหารและหลังเข้าห้องน้ำ"],
+  ["วัยทารกมีอายุประมาณ ___ ปี",["0–1","2–5","6–12","13–18"],"วัยทารกคือช่วงอายุประมาณ 0–1 ปี"],
+  ["ควรอ่านหนังสือในที่___",["สว่าง","มืด","แคบ","ร้อน"],"อ่านหนังสือในที่สว่างช่วยถนอมสายตา"]
+ ],
+ order:[
+  ["เรียงลำดับขั้นตอนการล้างมือให้สะอาด",["เปิดน้ำให้มือเปียก","ถูสบู่ให้ทั่วมือ","ถูฝ่ามือ หลังมือ และซอกนิ้ว","ล้างด้วยน้ำสะอาด","เช็ดมือให้แห้ง"],"ล้างมือให้ครบทุกขั้นตอนจึงจะสะอาดจริง"],
+  ["เรียงลำดับการเจริญเติบโตของมนุษย์จากเล็กไปใหญ่",["วัยทารก 0–1 ปี","วัยก่อนเรียน 2–5 ปี","วัยเรียน 6–12 ปี"],"ร่างกายเจริญเติบโตและเปลี่ยนแปลงไปตามวัย"]
+ ],
+ match:[
+  ["จับคู่อวัยวะกับหน้าที่ให้ถูกต้อง",[["ตา","มองเห็นสิ่งต่าง ๆ"],["หู","ได้ยินเสียง"],["จมูก","หายใจและดมกลิ่น"],["ลิ้น","รับรสอาหาร"]],"อวัยวะภายนอกแต่ละอย่างมีหน้าที่ต่างกัน"],
+  ["จับคู่อวัยวะกับวิธีดูแลให้ถูกต้อง",[["มือ","ล้างให้สะอาดก่อนกินอาหาร"],["เท้า","สวมรองเท้าให้ถูกขนาด"],["ผิวหนัง","อาบน้ำและทาครีมกันแดด"],["ปาก","แปรงฟันหลังอาหาร"]],"ดูแลอวัยวะภายนอกให้ถูกวิธีเพื่อให้ร่างกายแข็งแรง"]
+ ]
+},
+u4:{
+ tf:[
+  ["ฟันน้ำนมมีทั้งหมด 20 ซี่",true,"ฟันน้ำนมคือฟันชุดแรกของเด็ก มี 20 ซี่"],
+  ["ฟันแท้มีทั้งหมด 20 ซี่",false,"ฟันแท้มี 32 ซี่ ส่วนฟันน้ำนมมี 20 ซี่"],
+  ["ควรแปรงฟันอย่างน้อยวันละ 2 ครั้ง",true,"แปรงฟันตอนเช้าและก่อนนอน"],
+  ["ใช้แปรงสีฟันร่วมกับเพื่อนได้",false,"ควรใช้แปรงสีฟันของตนเอง ไม่ใช้ร่วมกับผู้อื่น"],
+  ["ควรพบทันตแพทย์ทุก 6 เดือน",true,"ตรวจฟันกับทันตแพทย์ทุก 6 เดือน"],
+  ["การกินขนมหวานบ่อย ๆ ทำให้ฟันผุ",true,"ขนมหวานและน้ำอัดลมทำให้ฟันผุได้ง่าย"],
+  ["ไม่จำเป็นต้องแปรงฟันก่อนนอน",false,"ต้องแปรงฟันก่อนนอนทุกคืน เพราะเศษอาหารทำให้ฟันผุ"],
+  ["ควรเปลี่ยนแปรงสีฟันเมื่อขนแปรงบาน",true,"ขนแปรงบานแล้วทำความสะอาดฟันได้ไม่ดี"],
+  ["ใช้ฟันกัดน้ำแข็งได้ ไม่เป็นอันตราย",false,"ไม่ควรใช้ฟันกัดของแข็ง เช่น น้ำแข็ง เพราะฟันแตกได้"]
+ ],
+ fill:[
+  ["ฟันน้ำนมมีทั้งหมด ___ ซี่",["20","32","28","16"],"ฟันน้ำนมมี 20 ซี่"],
+  ["ฟันแท้มีทั้งหมด ___ ซี่",["32","20","24","30"],"ฟันแท้มี 32 ซี่ ใช้ไปตลอดชีวิต"],
+  ["ควรบีบยาสีฟันขนาดเท่าเมล็ด___",["ถั่วเขียว","แตงโม","มะพร้าว","ข้าวโพด"],"บีบยาสีฟันขนาดเท่าเมล็ดถั่วเขียวก็เพียงพอ"],
+  ["ควรแปรงฟันตอนเช้าและก่อน___",["นอน","เล่น","เรียน","วิ่ง"],"แปรงฟันอย่างน้อยวันละ 2 ครั้ง คือเช้าและก่อนนอน"],
+  ["หลังแปรงฟันควรบ้วนปากด้วยน้ำ___",["สะอาด","อัดลม","หวาน","ร้อนจัด"],"บ้วนปากด้วยน้ำสะอาดหลังแปรงฟัน"],
+  ["ควรพบทันตแพทย์ทุก ___ เดือน",["6","1","24","60"],"ตรวจฟันทุก 6 เดือน"]
+ ],
+ order:[
+  ["เรียงลำดับขั้นตอนการแปรงฟันให้ถูกวิธี",["บีบยาสีฟันลงบนแปรง","แปรงด้านนอกของฟัน","แปรงด้านในของฟัน","แปรงลิ้นเบา ๆ","บ้วนปากด้วยน้ำสะอาด"],"แปรงให้ทั่วทุกด้าน แล้วจึงแปรงลิ้นและบ้วนปาก"],
+  ["เรียงลำดับการขึ้นของฟันตามอายุ",["ฟันน้ำนมเริ่มขึ้น อายุ 6 เดือน","ฟันน้ำนมขึ้นครบ อายุ 2–3 ปี","ฟันแท้เริ่มขึ้น อายุ 6 ปี","ฟันแท้ขึ้นครบ อายุ 18–21 ปี"],"ฟันน้ำนมขึ้นก่อน แล้วฟันแท้จึงขึ้นแทนที่"]
+ ],
+ match:[
+  ["จับคู่สิ่งของกับหน้าที่ให้ถูกต้อง",[["ฟันน้ำนม","มี 20 ซี่"],["ฟันแท้","มี 32 ซี่"],["ยาสีฟัน","บีบลงบนแปรงสีฟัน"],["แปรงสีฟัน","ใช้ทำความสะอาดฟัน"]],"ทบทวนจำนวนฟันและอุปกรณ์ที่ใช้ดูแลช่องปาก"],
+  ["จับคู่การดูแลฟันกับช่วงเวลาที่ถูกต้อง",[["แปรงฟันวันละ 2 ครั้ง","เช้าและก่อนนอน"],["พบทันตแพทย์","ทุก 6 เดือน"],["เปลี่ยนแปรงสีฟัน","เมื่อขนแปรงบาน"],["เมื่อปวดฟัน","รีบไปพบทันตแพทย์"]],"ดูแลช่องปากให้ถูกเวลาจะช่วยป้องกันฟันผุ"]
+ ]
+}
+};
+const QTYPE = {mc:"เลือกตอบ", tf:"ถูก–ผิด", fill:"เติมคำ", order:"เรียงลำดับ", match:"จับคู่"};
+const QTOTAL = UK.reduce((a,k)=> a + BANK[k].length + XB[k].tf.length + XB[k].fill.length + XB[k].order.length + XB[k].match.length, 0);
+
+/* ---------------- helpers ---------------- */
+const $ = s => document.querySelector(s);
+const el = (t,c,h) => { const n=document.createElement(t); if(c)n.className=c; if(h!=null)n.innerHTML=h; return n; };
+const esc = s => String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+function shuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]];} return a; }
+function sid(name){ let h=5381; for(const ch of name) h=((h*33)^ch.codePointAt(0))>>>0; return "s"+h.toString(36); }
+const LS_NAME="hedp1.name", LS_DATA="hedp1.students", LS_STARS="hedp1.stars";
+const STAR_SVG = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.7 5.9 6.3.7-4.7 4.3 1.3 6.3L12 16.6l-5.6 3.2 1.3-6.3L3 9.2l6.3-.7Z"/></svg>';
+const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg>';
+const CROSS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>';
+const UICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>';
+
+/* ---------------- local + shared storage ---------------- */
+let DB = null, DL = null;
+function loadLocal(){ try{ return JSON.parse(localStorage.getItem(LS_DATA)||"{}"); }catch(e){ return {}; } }
+function saveLocal(o){ try{ localStorage.setItem(LS_DATA, JSON.stringify(o)); }catch(e){} }
+function getName(){ try{ return localStorage.getItem(LS_NAME)||""; }catch(e){ return ""; } }
+function setName(v){ try{ localStorage.setItem(LS_NAME, v); }catch(e){} }
+function getStars(){ try{ return +(localStorage.getItem(LS_STARS)||0); }catch(e){ return 0; } }
+function addStars(n){ const t=getStars()+n; try{ localStorage.setItem(LS_STARS, t); }catch(e){} paintStars(); return t; }
+function paintStars(){ $("#starNum").textContent = getStars(); }
+
+function blankRec(name){
+  const u={}; UK.forEach(k=>u[k]={c:0,t:0});
+  return {name, attempts:0, correct:0, total:0, stars:0, units:u, best:{}, last:""};
+}
+function mergeResult(rec, res){
+  rec.attempts += 1; rec.correct += res.correct; rec.total += res.qs.length;
+  rec.stars += res.stars; rec.last = new Date().toISOString();
+  for(const k in res.byUnit){ if(!rec.units[k]) rec.units[k]={c:0,t:0};
+    rec.units[k].c += res.byUnit[k].c; rec.units[k].t += res.byUnit[k].t; }
+  const pct = Math.round(res.correct/res.qs.length*100);
+  if(!rec.best[res.unit] || rec.best[res.unit] < pct) rec.best[res.unit] = pct;
+  return rec;
+}
+async function saveResult(res){
+  const name = getName().trim(); if(!name) return;
+  const id = sid(name);
+  const all = loadLocal();
+  const rec = mergeResult(all[id] || blankRec(name), res);
+  all[id] = rec; saveLocal(all);
+  if(DB){
+    try{
+      const ref = DB.doc("students/"+id);
+      const snap = await ref.get();
+      const base = snap.exists ? snap.data() : blankRec(name);
+      if(!base.units) base.units = blankRec(name).units;
+      if(!base.best) base.best = {};
+      base.name = name;
+      await ref.set(mergeResult(base, res));
+    }catch(e){ /* ยังมีข้อมูลในเครื่องเสมอ */ }
+  }
+}
+async function readAll(){
+  if(DB){
+    try{
+      const snap = await DB.collection("students").limit(500).get();
+      const out = {}; snap.docs.forEach(d=>{ out[d.id] = d.data(); });
+      if(Object.keys(out).length) return {rows:out, shared:true};
+      return {rows:loadLocal(), shared:true};
+    }catch(e){}
+  }
+  return {rows:loadLocal(), shared:false};
+}
+
+/* ---------------- views ---------------- */
+const VIEWS = ["home","review","quiz","result","teacher"];
+let current = "home";
+function show(v){
+  current = v;
+  VIEWS.forEach(n => $("#v-"+n).hidden = (n!==v));
+  window.scrollTo({top:0, behavior:"smooth"});
+}
+
+/* ---------------- home ---------------- */
+function paintHome(){
+  const g = $("#unitGrid"); g.textContent="";
+  const local = loadLocal(); const rec = local[sid(getName().trim())];
+  let total=0;
+  UK.forEach(k=>{
+    const u = UNITS[k]; total += BANK[k].length;
+    const best = rec && rec.best ? (rec.best[k]||0) : 0;
+    const card = el("div","unit");
+    card.style.setProperty("--uc", u.color); card.style.setProperty("--ucs", u.soft);
+    card.innerHTML =
+      '<span class="tag">'+UICON+' หน่วยที่ '+u.n+'</span>'+
+      '<h4>'+esc(u.name)+'</h4>'+
+      '<p>'+esc(u.blurb)+'</p>'+
+      '<div class="best"><span>คะแนนดีที่สุด</span><span class="track"><span style="width:'+best+'%"></span></span><span class="num">'+best+'%</span></div>'+
+      '<div class="acts"><button class="btn" data-rev="'+k+'" type="button">ทบทวน</button>'+
+      '<button class="btn btn-primary" data-quiz="'+k+'" type="button">ทำข้อสอบ</button></div>';
+    g.appendChild(card);
+  });
+  $("#bankCount").textContent = "คลังข้อสอบ "+QTOTAL+" ข้อ · 5 แนวข้อสอบ";
+  $("#nameInput").value = getName();
+  $("#whoLine").textContent = getName() ? "สวัสดี "+getName() : "ทบทวน · ทำข้อสอบ · เก็บดาว";
+  paintStars();
+}
+
+/* ---------------- review ---------------- */
+let reviewUnit = "u1";
+function openReview(k){
+  reviewUnit = k; const u = UNITS[k];
+  const head = $("#reviewHead");
+  head.innerHTML = '<div class="eyebrow">หน่วยที่ '+u.n+' · โหมดทบทวน</div>'+
+    '<h2>'+esc(u.name)+'</h2><p>'+esc(u.blurb)+'</p>';
+  const body = $("#reviewBody"); body.textContent="";
+  REVIEW[k].forEach((sec,i)=>{
+    const d = el("div","rsec");
+    d.style.setProperty("--uc", u.color); d.style.setProperty("--ucs", u.soft);
+    let html = '<h3><b>'+(i+1)+'</b>'+esc(sec.h)+'</h3>';
+    if(sec.keys){ html += '<div class="keybox">'+sec.keys.map(x=>'<div class="key"><span class="n">'+esc(x.n)+'</span><span class="l">'+esc(x.l)+'</span></div>').join("")+'</div>'; }
+    if(sec.items && sec.items.length){ html += '<ul style="margin-top:'+(sec.keys?'12px':'0')+'">'+sec.items.map(t=>'<li><span>'+t+'</span></li>').join("")+'</ul>'; }
+    d.innerHTML = html; body.appendChild(d);
+  });
+  show("review");
+}
+
+/* ---------------- quiz engine (5 แนวข้อสอบ) ---------------- */
+let Q = null;
+const LETTERS = ["ก","ข","ค","ง","จ"];
+const TICK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m4 12 6 6L20 6"/></svg>';
+const XMARK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6 6 18"/></svg>';
+
+const MAKE = {
+  mc:  (k,q)=>({unit:k, type:"mc",    text:q[0], opts:shuffle(q[1].map((t,i)=>({t, ok:i===q[2]}))), exp:q[3]}),
+  tf:  (k,q)=>({unit:k, type:"tf",    text:q[0], ans:q[1], exp:q[2]}),
+  fill:(k,q)=>({unit:k, type:"fill",  text:q[0], bank:shuffle(q[1]), ans:q[1][0], exp:q[2]}),
+  order:(k,q)=>({unit:k,type:"order", text:q[0], steps:q[1], pool:shuffle(q[1].map((t,i)=>({t,i}))), exp:q[2]}),
+  match:(k,q)=>({unit:k,type:"match", text:q[0], pairs:q[1],
+                 left:shuffle(q[1].map((p,i)=>({t:p[0],i}))), right:shuffle(q[1].map((p,i)=>({t:p[1],i}))), exp:q[2]})
+};
+function drawUnit(k, plan){
+  const out = [];
+  plan.forEach(([type,n])=>{
+    const pool = type==="mc" ? BANK[k] : (XB[k]||{})[type];
+    if(!pool || !pool.length) return;
+    shuffle(pool).slice(0,n).forEach(q => out.push(MAKE[type](k,q)));
+  });
+  return out;
+}
+function buildQuiz(unitKey){
+  if(unitKey === "mix"){
+    let all = [];
+    UK.forEach(k => all = all.concat(drawUnit(k, [["mc",2],["tf",1],["fill",1],[Math.random()<0.5?"order":"match",1]])));
+    return shuffle(all);
+  }
+  return shuffle(drawUnit(unitKey, [["mc",4],["tf",2],["fill",2],["order",1],["match",1]]));
+}
+function startQuiz(unitKey){
+  if(!getName().trim()){ show("home"); $("#nameHint").hidden=false; $("#nameInput").focus(); return; }
+  $("#nameHint").hidden = true;
+  Q = {unit:unitKey, qs:buildQuiz(unitKey), i:0, marks:[], done:false};
+  show("quiz"); paintQ();
+}
+
+function paintQ(){
+  const q = Q.qs[Q.i], u = UNITS[q.unit];
+  const dots = $("#dots"); dots.textContent = "";
+  Q.qs.forEach((_,i)=> dots.appendChild(el("span","dot"+(i<Q.i ? (Q.marks[i]?" ok":" no") : i===Q.i?" now":""))));
+  $("#qCount").textContent = "ข้อ "+(Q.i+1)+" / "+Q.qs.length;
+  const card = $(".qcard");
+  card.style.setProperty("--uc", u.color); card.style.setProperty("--ucs", u.soft);
+  $("#qTag").innerHTML = '<span class="chiplab u">'+UICON+' หน่วยที่ '+u.n+' · '+esc(u.short)+'</span>'+
+                         '<span class="chiplab t">'+esc(QTYPE[q.type])+'</span>';
+  $("#fb").textContent = ""; $("#qnav").hidden = true; Q.done = false;
+  ({mc:renderMC, tf:renderTF, fill:renderFill, order:renderOrder, match:renderMatch})[q.type](q);
+}
+
+/* ผลลัพธ์ของแต่ละข้อ */
+function resolve(ok, rightTxt, mineTxt, extraHtml){
+  if(Q.done) return; Q.done = true;
+  const q = Q.qs[Q.i];
+  Q.marks[Q.i] = ok; q._right = rightTxt; q._mine = mineTxt;
+  const fb = $("#fb"); fb.textContent = "";
+  const box = el("div","fb "+(ok?"good":"bad"));
+  box.innerHTML = '<span class="ic">'+(ok?CHECK:CROSS)+'</span><div><h4>'+
+    (ok ? "ถูกต้อง เก่งมาก!" : "ยังไม่ถูกนะ ลองอ่านเฉลย") + '</h4><p>'+q.exp+'</p>'+(extraHtml||"")+'</div>';
+  fb.appendChild(box); box.classList.add("pop");
+  if(ok) addStars(1);
+  $("#qnav").hidden = false;
+  $("#nextBtn").textContent = (Q.i === Q.qs.length-1) ? "ดูผลคะแนน →" : "ข้อต่อไป →";
+  $("#nextBtn").focus();
+  const dts = $("#dots").children; if(dts[Q.i]) dts[Q.i].className = "dot "+(ok?"ok":"no");
+}
+
+/* --- 1. เลือกตอบ --- */
+function renderMC(q){
+  $("#qText").innerHTML = q.text;
+  const box = $("#opts"); box.className = "opts"; box.textContent = "";
+  q.opts.forEach((o,i)=>{
+    const b = el("button","opt"); b.type = "button";
+    b.innerHTML = '<span class="k">'+LETTERS[i]+'</span><span>'+esc(o.t)+'</span>';
+    b.addEventListener("click", ()=>{
+      if(Q.done) return;
+      const btns = [...box.children];
+      btns.forEach((x,j)=>{ x.disabled = true;
+        if(q.opts[j].ok) x.classList.add("correct");
+        else if(j===i) x.classList.add("wrong");
+        else x.classList.add("dim"); });
+      resolve(o.ok, q.opts.find(o2=>o2.ok).t, o.t);
+    });
+    box.appendChild(b);
+  });
+}
+
+/* --- 2. ถูก-ผิด --- */
+function renderTF(q){
+  $("#qText").innerHTML = '<span class="eyebrow">อ่านข้อความแล้วเลือกว่า ถูก หรือ ผิด</span>';
+  const box = $("#opts"); box.className = ""; box.textContent = "";
+  box.appendChild(el("p","stmt", esc(q.text)));
+  const row = el("div","tf-row");
+  [[true,"ถูก","y",TICK],[false,"ผิด","n",XMARK]].forEach(([val,label,cls,ico])=>{
+    const b = el("button","tf "+cls); b.type = "button";
+    b.innerHTML = ico + "<span>" + label + "</span>";
+    b.addEventListener("click", ()=>{
+      if(Q.done) return;
+      [...row.children].forEach(x=>{ x.disabled = true; x.classList.add("faded"); });
+      b.classList.add("chosen"); b.classList.remove("faded");
+      const keyBtn = row.children[q.ans ? 0 : 1];
+      keyBtn.classList.add("key"); keyBtn.classList.remove("faded");
+      resolve(val === q.ans, q.ans ? "ถูก" : "ผิด", label);
+    });
+    row.appendChild(b);
+  });
+  box.appendChild(row);
+}
+
+/* --- 3. เติมคำในช่องว่าง --- */
+function renderFill(q){
+  $("#qText").innerHTML = '<span class="eyebrow">เลือกคำจากคลังคำมาเติมในช่องว่าง</span>';
+  const box = $("#opts"); box.className = ""; box.textContent = "";
+  const parts = q.text.split("___");
+  const sent = el("p","fill-sent");
+  sent.appendChild(document.createTextNode(parts[0]));
+  const blank = el("span","blank empty","?"); sent.appendChild(blank);
+  sent.appendChild(document.createTextNode(parts[1]||""));
+  box.appendChild(sent);
+  box.appendChild(el("p","banklabel","คลังคำ"));
+  const chips = el("div","chips");
+  q.bank.forEach(w=>{
+    const b = el("button","chip"); b.type = "button"; b.textContent = w;
+    b.addEventListener("click", ()=>{
+      if(Q.done) return;
+      const ok = (w === q.ans);
+      blank.textContent = w; blank.classList.remove("empty");
+      [...chips.children].forEach(x=>{ x.disabled = true;
+        if(x.textContent === q.ans) x.classList.add("correct");
+        else if(x === b) x.classList.add("wrong");
+        else x.classList.add("faded"); });
+      resolve(ok, q.ans, w);
+    });
+    chips.appendChild(b);
+  });
+  box.appendChild(chips);
+}
+
+/* --- 4. เรียงลำดับ --- */
+function renderOrder(q){
+  $("#qText").innerHTML = esc(q.text);
+  const box = $("#opts"); box.className = ""; box.textContent = "";
+  box.appendChild(el("p","howto","แตะข้อความตามลำดับที่ถูกต้อง ตัวเลขจะขึ้นให้เห็น"));
+  const list = el("div","steps"); const picked = [];
+  q.pool.forEach(item=>{
+    const b = el("button","step"); b.type = "button"; b.dataset.idx = item.i;
+    b.innerHTML = '<span class="ord">•</span><span>'+esc(item.t)+'</span>';
+    b.addEventListener("click", ()=>{
+      if(Q.done || b.classList.contains("picked")) return;
+      picked.push(item.i);
+      b.classList.add("picked"); b.querySelector(".ord").textContent = picked.length;
+      if(picked.length === q.steps.length){
+        const ok = picked.every((v,j)=> v === j);
+        [...list.children].forEach(x=>{
+          x.disabled = true;
+          const got = picked.indexOf(+x.dataset.idx);
+          x.classList.add(got === +x.dataset.idx ? "right" : "badplace");
+        });
+        tools.hidden = true;
+        const keyHtml = '<ol class="pairlist" style="counter-reset:none">'+
+          q.steps.map((s,j)=>'<li><b>'+(j+1)+'.</b> '+esc(s)+'</li>').join("")+'</ol>';
+        resolve(ok, q.steps.join(" → "), picked.map(i=>q.steps[i]).join(" → "), '<p style="margin:8px 0 2px;font-size:.9rem;color:var(--ink-2)">ลำดับที่ถูกต้อง</p>'+keyHtml);
+      }
+    });
+    list.appendChild(b);
+  });
+  box.appendChild(list);
+  const tools = el("div","tools");
+  const rst = el("button","btn btn-ghost"); rst.type = "button"; rst.textContent = "เริ่มใหม่";
+  rst.addEventListener("click", ()=>{
+    if(Q.done) return;
+    picked.length = 0;
+    [...list.children].forEach(x=>{ x.classList.remove("picked"); x.querySelector(".ord").textContent = "•"; });
+  });
+  tools.appendChild(rst); box.appendChild(tools);
+}
+
+/* --- 5. จับคู่ --- */
+function renderMatch(q){
+  $("#qText").innerHTML = esc(q.text);
+  const box = $("#opts"); box.className = ""; box.textContent = "";
+  box.appendChild(el("p","howto","แตะข้อความด้านซ้าย แล้วแตะคู่ที่ใช่ด้านขวา"));
+  const grid = el("div","match-grid");
+  const colL = el("div","mcol"), colR = el("div","mcol");
+  grid.appendChild(el("div","mhead","ข้อความด้านซ้าย"));
+  grid.appendChild(el("div","mhead","ข้อความด้านขวา"));
+  grid.appendChild(colL); grid.appendChild(colR);
+  let sel = null; const links = {}; let n = 0;
+  function mk(item, side){
+    const b = el("button","mitem"); b.type = "button"; b.dataset.i = item.i;
+    b.innerHTML = '<span class="pin"></span><span>'+esc(item.t)+'</span>';
+    b.addEventListener("click", ()=>{
+      if(Q.done) return;
+      if(side === "L"){
+        if(b.classList.contains("tied")) return;
+        if(sel) sel.classList.remove("sel");
+        sel = (sel === b) ? null : b;
+        if(sel) sel.classList.add("sel");
+      } else {
+        if(!sel || b.classList.contains("tied")) return;
+        const color = "p" + (n % 4);
+        [sel,b].forEach(x=>{ x.classList.add("tied", color); x.classList.remove("sel"); x.querySelector(".pin").textContent = n+1; });
+        links[sel.dataset.i] = b.dataset.i;
+        sel = null; n++;
+        if(n === q.pairs.length) check();
+      }
+    });
+    return b;
+  }
+  q.left.forEach(it => colL.appendChild(mk(it,"L")));
+  q.right.forEach(it => colR.appendChild(mk(it,"R")));
+  box.appendChild(grid);
+  function check(){
+    let good = 0;
+    [...colL.children].forEach(x=>{
+      const right = links[x.dataset.i] === x.dataset.i;
+      if(right) good++;
+      const mate = [...colR.children].find(y=>y.dataset.i === links[x.dataset.i]);
+      [x, mate].forEach(n2=>{ if(!n2) return;
+        n2.classList.remove("p0","p1","p2","p3");
+        n2.classList.add(right ? "good" : "bad"); });
+    });
+    [...grid.querySelectorAll(".mitem")].forEach(x=> x.disabled = true);
+    const keyHtml = '<ul class="pairlist">'+q.pairs.map(p=>'<li>'+esc(p[0])+' → <b>'+esc(p[1])+'</b></li>').join("")+'</ul>';
+    const mine = [...colL.children].map(x=>{
+      const mate = [...colR.children].find(y=>y.dataset.i === links[x.dataset.i]);
+      return x.lastChild.textContent + " → " + (mate ? mate.lastChild.textContent : "—");
+    }).join(" · ");
+    resolve(good === q.pairs.length, q.pairs.map(p=>p[0]+" → "+p[1]).join(" · "), mine,
+      '<p style="margin:8px 0 2px;font-size:.9rem;color:var(--ink-2)">จับคู่ถูก '+good+' จาก '+q.pairs.length+' คู่ · เฉลย</p>'+keyHtml);
+  }
+}
+
+$("#nextBtn").addEventListener("click", ()=>{
+  if(Q.i < Q.qs.length-1){ Q.i++; paintQ(); } else finish();
+});
+
+/* ---------------- result ---------------- */
+async function finish(){
+  const correct = Q.marks.filter(Boolean).length;
+  const pct = Math.round(correct/Q.qs.length*100);
+  const stars = pct>=90?3:pct>=70?2:pct>=50?1:0;
+  const byUnit = {}; Q.qs.forEach((q,i)=>{
+    byUnit[q.unit] = byUnit[q.unit] || {c:0,t:0};
+    byUnit[q.unit].t++; if(Q.marks[i]) byUnit[q.unit].c++;
+  });
+  const res = {unit:Q.unit, qs:Q.qs, correct, stars, byUnit};
+
+  $("#rsTitle").textContent = Q.unit==="mix" ? "ผลข้อสอบรวม 4 หน่วย" : "ผลหน่วยที่ "+UNITS[Q.unit].n+" · "+UNITS[Q.unit].short;
+  $("#rsScore").textContent = correct;
+  $("#rsOf").textContent = " / "+Q.qs.length+" ข้อ";
+  const st = $("#rsStars"); st.textContent="";
+  for(let i=0;i<3;i++){ const s = el("span","",STAR_SVG); const svg=s.firstChild; if(i<stars) svg.classList.add("lit"); st.appendChild(svg); }
+  const msg = pct>=90?"ยอดเยี่ยมมาก!":pct>=70?"เก่งมาก อีกนิดเดียว":pct>=50?"ทำได้ดี ลองทบทวนอีกครั้งนะ":"ไม่เป็นไรนะ กลับไปทบทวนแล้วลองใหม่";
+  $("#rsMsg").textContent = msg;
+  $("#rsSub").textContent = "ได้ "+pct+"% · เก็บดาวเพิ่ม "+correct+" ดวงจากข้อที่ตอบถูก";
+
+  const bd = $("#rsBreak"); bd.textContent="";
+  Object.keys(byUnit).forEach(k=>{
+    const u=UNITS[k], v=byUnit[k], p=Math.round(v.c/v.t*100);
+    const row = el("div","bdrow");
+    row.style.setProperty("--uc", u.color);
+    row.innerHTML = '<span class="nm">หน่วย '+u.n+' · '+esc(u.short)+'</span><span class="tr"><span style="width:'+p+'%"></span></span><span class="vl">'+v.c+'/'+v.t+'</span>';
+    bd.appendChild(row);
+  });
+
+  const w = $("#rsWrongs"); w.textContent="";
+  const wrongIdx = Q.qs.map((q,i)=>i).filter(i=>!Q.marks[i]);
+  if(wrongIdx.length){
+    w.appendChild(el("div","sec-head","<h3>ข้อที่ควรทบทวน ("+wrongIdx.length+" ข้อ)</h3>"));
+    wrongIdx.forEach(i=>{
+      const q = Q.qs[i];
+      const d = el("details");
+      d.innerHTML = '<summary><span class="chiplab t" style="margin-inline-end:6px">'+esc(QTYPE[q.type])+'</span>'+q.text.replace("___","______")+'</summary>'+
+        '<p class="ans">เฉลย: <b>'+esc(q._right)+'</b><br>หนูตอบ: <i>'+esc(q._mine)+'</i><br>'+q.exp+'</p>';
+      w.appendChild(d);
+    });
+  } else {
+    w.appendChild(el("div","empty","ตอบถูกครบทุกข้อเลย เยี่ยมมาก!"));
+  }
+  show("result");
+  saveResult(res);
+}
+$("#again").addEventListener("click", ()=> startQuiz(Q.unit));
+
+/* ---------------- teacher ---------------- */
+let lastRows = {};
+async function paintTeacher(){
+  const {rows, shared} = await readAll();
+  lastRows = rows;
+  const ids = Object.keys(rows);
+  const st = $("#tStats"); st.textContent="";
+  let sumC=0, sumT=0, stars=0;
+  ids.forEach(id=>{ const r=rows[id]; sumC+=r.correct||0; sumT+=r.total||0; stars+=r.stars||0; });
+  const avg = sumT ? Math.round(sumC/sumT*100) : 0;
+  [["นักเรียน", ids.length],["ครั้งที่ทำข้อสอบ", ids.reduce((a,id)=>a+(rows[id].attempts||0),0)],
+   ["คะแนนเฉลี่ยทั้งห้อง", avg+"%"],["ดาวรวม", stars]].forEach(([l,n])=>{
+    st.appendChild(el("div","stat",'<span class="n">'+n+'</span><span class="l">'+l+'</span>'));
+  });
+
+  const tu = $("#tUnits"); tu.textContent="";
+  const uAgg = {}; UK.forEach(k=>uAgg[k]={c:0,t:0});
+  ids.forEach(id=>{ const u=rows[id].units||{}; UK.forEach(k=>{ if(u[k]){ uAgg[k].c+=u[k].c||0; uAgg[k].t+=u[k].t||0; } }); });
+  const scored = UK.map(k=>({k, p: uAgg[k].t ? Math.round(uAgg[k].c/uAgg[k].t*100) : null}));
+  const weakest = scored.filter(x=>x.p!==null).sort((a,b)=>a.p-b.p)[0];
+  scored.forEach(({k,p})=>{
+    const u=UNITS[k], row=el("div","bdrow"); row.style.setProperty("--uc",u.color);
+    row.innerHTML = '<span class="nm">หน่วย '+u.n+' · '+esc(u.name)+'</span>'+
+      '<span class="tr"><span style="width:'+(p||0)+'%"></span></span>'+
+      '<span class="vl">'+(p===null?"—":p+"%")+'</span>';
+    tu.appendChild(row);
+  });
+
+  const tw = $("#tTable"); tw.textContent="";
+  if(!ids.length){
+    tw.appendChild(el("div","empty","ยังไม่มีนักเรียนทำข้อสอบ<br>ให้นักเรียนใส่ชื่อในหน้าหลักแล้วทำข้อสอบ คะแนนจะขึ้นที่นี่ทันที"));
+  } else {
+    const rowsHtml = ids.map(id=>rows[id])
+      .sort((a,b)=> (b.total?b.correct/b.total:0) - (a.total?a.correct/a.total:0))
+      .map(r=>{
+        const p = r.total ? Math.round(r.correct/r.total*100) : 0;
+        const cls = p>=80?"g":p>=60?"y":"r";
+        const cells = UK.map(k=>{ const u=(r.units||{})[k]; return '<td class="n">'+(u&&u.t?Math.round(u.c/u.t*100)+"%":"—")+'</td>'; }).join("");
+        const d = r.last ? new Date(r.last).toLocaleDateString("th-TH",{day:"numeric",month:"short"}) : "—";
+        return '<tr><td>'+esc(r.name||"—")+'</td><td class="n">'+(r.attempts||0)+'</td>'+
+               '<td><span class="pill '+cls+'">'+p+'%</span></td>'+cells+
+               '<td class="n">'+(r.stars||0)+'</td><td class="n">'+d+'</td></tr>';
+      }).join("");
+    const wrap = el("div","tblwrap");
+    wrap.innerHTML = '<table><thead><tr><th>ชื่อ</th><th>ครั้ง</th><th>เฉลี่ย</th>'+
+      UK.map(k=>'<th>ห'+UNITS[k].n+'</th>').join("")+'<th>ดาว</th><th>ล่าสุด</th></tr></thead><tbody>'+rowsHtml+'</tbody></table>';
+    tw.appendChild(wrap);
+  }
+  $("#tNote").textContent = (shared ? "ข้อมูลนี้รวมจากทุกเครื่องที่เปิดหน้านี้" : "ขณะนี้แสดงเฉพาะข้อมูลในเครื่องนี้")
+    + (weakest ? " · หน่วยที่ควรสอนซ้ำมากที่สุดคือ หน่วยที่ "+UNITS[weakest.k].n+" "+UNITS[weakest.k].name+" ("+weakest.p+"%)" : "");
+  show("teacher");
+}
+$("#tRefresh").addEventListener("click", paintTeacher);
+$("#tCsv").addEventListener("click", async ()=>{
+  if(!DL) return;
+  const head = ["ชื่อ","ครั้งที่ทำ","ตอบถูก","ข้อทั้งหมด","เฉลี่ย%"].concat(UK.map(k=>"หน่วย"+UNITS[k].n+"%")).concat(["ดาว","ล่าสุด"]);
+  const lines = [head.join(",")];
+  Object.values(lastRows).forEach(r=>{
+    const p = r.total ? Math.round(r.correct/r.total*100) : 0;
+    const us = UK.map(k=>{ const u=(r.units||{})[k]; return u&&u.t?Math.round(u.c/u.t*100):""; });
+    lines.push(['"'+String(r.name||"").replace(/"/g,'""')+'"', r.attempts||0, r.correct||0, r.total||0, p].concat(us).concat([r.stars||0, r.last||""]).join(","));
+  });
+  try{ await DL.save({filename:"คะแนนติวสุขศึกษา-ป1.csv", data:"﻿"+lines.join("\n")}); }catch(e){}
+});
+
+/* ---------------- events ---------------- */
+document.addEventListener("click", e=>{
+  const t = e.target.closest("[data-home],[data-rev],[data-quiz]");
+  if(!t) return;
+  if(t.hasAttribute("data-home")){ paintHome(); show("home"); }
+  else if(t.hasAttribute("data-rev")) openReview(t.getAttribute("data-rev"));
+  else if(t.hasAttribute("data-quiz")) startQuiz(t.getAttribute("data-quiz"));
+});
+$("#reviewToQuiz").addEventListener("click", ()=> startQuiz(reviewUnit));
+$("#startMixed").addEventListener("click", ()=> startQuiz("mix"));
+$("#goTeacher").addEventListener("click", paintTeacher);
+$("#saveName").addEventListener("click", ()=>{
+  const v = $("#nameInput").value.trim();
+  setName(v); $("#nameHint").hidden = !!v; paintHome();
+});
+$("#nameInput").addEventListener("change", ()=>{ setName($("#nameInput").value.trim()); paintHome(); });
+$("#foot").textContent = "4 หน่วย · 5 แนวข้อสอบ · " + QTOTAL + " ข้อ";
+
+/* ---------------- boot ---------------- */
+function boot(state){
+  paintHome();
+  if(state && state.view && VIEWS.includes(state.view) && state.Q){ Q = state.Q; show(state.view); if(state.view==="quiz") paintQ(); }
+  else show("home");
+}
+try{
+  if(window.claude && window.claude.hot && window.claude.hot.ready) window.claude.hot.ready(boot);
+  else boot((window.claude && window.claude.hot && window.claude.hot.data) || {});
+  if(window.claude && window.claude.hot && window.claude.hot.snapshot) window.claude.hot.snapshot(()=>({view:current, Q}));
+}catch(e){ boot({}); }
+
+if(window.claude && window.claude.use){
+  window.claude.use("db").then(d=>{ DB = d; }).catch(()=>{});
+  window.claude.use("downloads").then(d=>{ DL = d; if(d) $("#tCsv").hidden = false; }).catch(()=>{});
+}
+</script>
+
+<script>
+/* --- โหมดไฟล์เดี่ยว (เปิดจากเครื่องตนเอง ไม่ผ่าน claude.ai) --- */
+if(!window.claude){
+  var csvBtn = document.getElementById("tCsv");
+  if(csvBtn){
+    csvBtn.hidden = false;
+    csvBtn.addEventListener("click", function(){
+      if(DL) return;
+      var head = ["ชื่อ","ครั้งที่ทำ","ตอบถูก","ข้อทั้งหมด","เฉลี่ย%"].concat(UK.map(function(k){return "หน่วย"+UNITS[k].n+"%";})).concat(["ดาว","ล่าสุด"]);
+      var lines = [head.join(",")];
+      Object.keys(lastRows).forEach(function(id){
+        var r = lastRows[id];
+        var p = r.total ? Math.round(r.correct/r.total*100) : 0;
+        var us = UK.map(function(k){ var u=(r.units||{})[k]; return u&&u.t?Math.round(u.c/u.t*100):""; });
+        lines.push(['"'+String(r.name||"").replace(/"/g,'""')+'"', r.attempts||0, r.correct||0, r.total||0, p].concat(us).concat([r.stars||0, r.last||""]).join(","));
+      });
+      var blob = new Blob(["\uFEFF"+lines.join("\n")], {type:"text/csv;charset=utf-8"});
+      var a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = "คะแนนติวสุขศึกษา-ป1.csv";
+      document.body.appendChild(a); a.click();
+      setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    });
+  }
+}
+</script>
+</body>
+</html>
