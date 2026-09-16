@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0E8F8A">
-<meta name="description" content="เว็บติวข้อสอบชั้นประถมศึกษาปีที่ 1 — สุขศึกษา ประวัติศาสตร์ วิทยาศาสตร์ ภาษาอังกฤษ ภาษาไทย 10 หน่วย 506 ข้อ สองภาษา มีภาพประกอบ เสียงอ่านโจทย์ และหน้าสรุปผลสำหรับครู">
+<meta name="description" content="เว็บติวข้อสอบชั้นประถมศึกษาปีที่ 1 — สุขศึกษา สังคมศึกษา ประวัติศาสตร์ วิทยาศาสตร์ ภาษาไทย ภาษาอังกฤษ 11 หน่วย 580 ข้อ สองภาษา มีภาพประกอบ เสียงอ่านโจทย์ และหน้าสรุปผลสำหรับครู">
 <style>
 :root{color-scheme:light dark}
 html,body{margin:0}
@@ -26,8 +26,8 @@ img{max-width:100%}
   --gold:#E0900F; --gold-soft:#FBEDD2;
   --ok:#17845A; --ok-soft:#DCF0E6;
   --no:#C4462F; --no-soft:#FAE3DE;
-  --u1:#D44B75; --u2:#6F4FCE; --u3:#38913F; --u4:#2570C4; --u5:#B5610A; --u6:#7A5230; --u7:#0E7C6B; --u8:#3F3D9E; --u9:#C0397A; --u10:#6A6F1F;
-  --u1-soft:#FADFE7; --u2-soft:#E7E0FA; --u3-soft:#DCF0DC; --u4-soft:#DCE9FA; --u5-soft:#FAEBD6; --u6-soft:#F0E5DA; --u7-soft:#D7EFEA; --u8-soft:#E1E0F7; --u9-soft:#FADFEC; --u10-soft:#EDEFD8;
+  --u1:#D44B75; --u2:#6F4FCE; --u3:#38913F; --u4:#2570C4; --u5:#B5610A; --u6:#7A5230; --u7:#0E7C6B; --u8:#3F3D9E; --u9:#C0397A; --u10:#6A6F1F; --u11:#4A6FA5;
+  --u1-soft:#FADFE7; --u2-soft:#E7E0FA; --u3-soft:#DCF0DC; --u4-soft:#DCE9FA; --u5-soft:#FAEBD6; --u6-soft:#F0E5DA; --u7-soft:#D7EFEA; --u8-soft:#E1E0F7; --u9-soft:#FADFEC; --u10-soft:#EDEFD8; --u11-soft:#DEE7F3;
   --shadow:0 1px 2px rgba(16,48,46,.06), 0 8px 24px -12px rgba(16,48,46,.22);
   --r-s:10px; --r-m:16px; --r-l:24px;
 }
@@ -40,8 +40,8 @@ img{max-width:100%}
     --gold:#F0B45E; --gold-soft:#3B2E15;
     --ok:#4FC992; --ok-soft:#123A2C;
     --no:#F08067; --no-soft:#3D1F18;
-    --u1:#F2799C; --u2:#A78CF0; --u3:#6DC473; --u4:#63A6EF; --u5:#F0A85E; --u6:#D3A87C; --u7:#4FCDB6; --u8:#9A97F2; --u9:#F286B6; --u10:#C3C86B;
-    --u1-soft:#3A1C26; --u2-soft:#251C3E; --u3-soft:#15311A; --u4-soft:#15263C; --u5-soft:#3A2A14; --u6-soft:#2E231A; --u7-soft:#0F332E; --u8-soft:#20203F; --u9-soft:#3B1B2A; --u10-soft:#2B2D13;
+    --u1:#F2799C; --u2:#A78CF0; --u3:#6DC473; --u4:#63A6EF; --u5:#F0A85E; --u6:#D3A87C; --u7:#4FCDB6; --u8:#9A97F2; --u9:#F286B6; --u10:#C3C86B; --u11:#93B4DE;
+    --u1-soft:#3A1C26; --u2-soft:#251C3E; --u3-soft:#15311A; --u4-soft:#15263C; --u5-soft:#3A2A14; --u6-soft:#2E231A; --u7-soft:#0F332E; --u8-soft:#20203F; --u9-soft:#3B1B2A; --u10-soft:#2B2D13; --u11-soft:#1C2836;
     --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.6);
   }
 }
@@ -53,8 +53,8 @@ img{max-width:100%}
   --gold:#F0B45E; --gold-soft:#3B2E15;
   --ok:#4FC992; --ok-soft:#123A2C;
   --no:#F08067; --no-soft:#3D1F18;
-  --u1:#F2799C; --u2:#A78CF0; --u3:#6DC473; --u4:#63A6EF; --u5:#F0A85E; --u6:#D3A87C; --u7:#4FCDB6; --u8:#9A97F2; --u9:#F286B6; --u10:#C3C86B;
-  --u1-soft:#3A1C26; --u2-soft:#251C3E; --u3-soft:#15311A; --u4-soft:#15263C; --u5-soft:#3A2A14; --u6-soft:#2E231A; --u7-soft:#0F332E; --u8-soft:#20203F; --u9-soft:#3B1B2A; --u10-soft:#2B2D13;
+  --u1:#F2799C; --u2:#A78CF0; --u3:#6DC473; --u4:#63A6EF; --u5:#F0A85E; --u6:#D3A87C; --u7:#4FCDB6; --u8:#9A97F2; --u9:#F286B6; --u10:#C3C86B; --u11:#93B4DE;
+  --u1-soft:#3A1C26; --u2-soft:#251C3E; --u3-soft:#15311A; --u4-soft:#15263C; --u5-soft:#3A2A14; --u6-soft:#2E231A; --u7-soft:#0F332E; --u8-soft:#20203F; --u9-soft:#3B1B2A; --u10-soft:#2B2D13; --u11-soft:#1C2836;
   --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.6);
 }
 *{box-sizing:border-box}
@@ -377,7 +377,7 @@ footer{margin-top:44px; padding-top:18px; border-top:1px solid var(--line); font
 <section id="v-home">
   <div class="hero">
     <div>
-      <div class="eyebrow">สุขศึกษา · ประวัติศาสตร์ · วิทยาศาสตร์ · ภาษาอังกฤษ · ภาษาไทย · ชั้น ป.1</div>
+      <div class="eyebrow">สุขศึกษา · สังคมศึกษา · ประวัติศาสตร์ · วิทยาศาสตร์ · ภาษาไทย · ภาษาอังกฤษ · ชั้น ป.1</div>
       <h2>ทบทวนก่อน แล้วลองทำข้อสอบดูนะ</h2>
       <p>เลือกหน่วยที่อยากติว อ่านสรุปสั้น ๆ แล้วทำข้อสอบ 10 ข้อ มีทั้งเลือกตอบ ถูก–ผิด เติมคำ เรียงลำดับ และจับคู่ เหมือนใบงานในห้องเรียน ตอบแล้วรู้เฉลยทันทีพร้อมคำอธิบาย ทุกข้อมีคำแปลภาษาอังกฤษกำกับ และมีเสียงอ่านโจทย์ทั้งไทยและอังกฤษ</p>
     </div>
@@ -1996,6 +1996,224 @@ XB.u10 = {
   ["จับคู่ตัวละครกับบทบาท",[["ใบโบก","ลูกช้างที่ฝึกก่อน"],["ใบบัว","ลูกช้างที่จับหางใบโบก"],["ควาญโพ","ครูใหญ่"],["ภูผา","ลูกของควาญโพ"]],"ทบทวนตัวละครในเรื่องโรงเรียนลูกช้าง"],
   ["จับคู่คำศัพท์กับความหมาย",[["ลูกช้าง","ช้างที่ยังเล็ก"],["ควาญช้าง","คนเลี้ยงและฝึกช้าง"],["งวง","จมูกที่ยาวของช้าง"],["ต่อแถว","เรียงต่อกันเป็นแถว"]],"ทบทวนคำศัพท์น่ารู้จากเรื่อง"],
   ["จับคู่สิ่งของกับหน้าที่ในเรื่อง",[["กล้วย","อาหารรางวัลของลูกช้าง"],["อ้อย","อาหารรางวัลของลูกช้าง เช่นกัน"],["วงกลม","รูปที่ลูกช้างเดินตามกัน"],["เชือก","ลักษณนามของช้าง"]],"ทบทวนรายละเอียดในเรื่อง"]
+ ]
+};
+
+
+/* ================= หน่วยที่ 11: สังคมศึกษา ป.1 — มนุษย์กับสิ่งแวดล้อม ================= */
+UNITS.u11 = {name:"มนุษย์กับสิ่งแวดล้อม", short:"สิ่งแวดล้อม", subj:"สังคมศึกษา",
+             color:"var(--u11)", soft:"var(--u11-soft)", n:11,
+             blurb:"สิ่งแวดล้อมทางกายภาพ การเปลี่ยนแปลงจากอดีตถึงปัจจุบัน การปรับตัว และการดูแลรักษา"};
+UK.push("u11");
+
+REVIEW.u11 = [
+ {h:"สิ่งแวดล้อมทางกายภาพ คืออะไร", items:[
+   "<b>สิ่งแวดล้อมทางกายภาพ</b> คือ สิ่งต่าง ๆ รอบตัวเรา เช่น <b>ดิน น้ำ อากาศ ภูเขา แม่น้ำ และสภาพอากาศ</b>",
+   "สิ่งเหล่านี้มีผลต่อการดำรงชีวิตของมนุษย์ในหลายด้าน"]},
+ {h:"สิ่งแวดล้อมมีผลต่อชีวิตเรา 5 ด้าน", keys:[{n:"ที่อยู่อาศัย",l:""},{n:"การเดินทาง",l:""},{n:"อาชีพ",l:""},{n:"การแต่งกาย",l:""},{n:"อาหาร",l:""}], items:[
+   "<b>ที่อยู่อาศัย</b> — มนุษย์สร้างบ้านให้เหมาะกับพื้นที่ เช่น บ้านใกล้น้ำ บ้านยกพื้น หรือบ้านที่กันแดดกันฝนได้ดี",
+   "<b>การเดินทาง</b> — พื้นที่ราบเดินทางสะดวก ส่วนพื้นที่ภูเขาหรือมีแม่น้ำ อาจต้องใช้เส้นทางและพาหนะต่างกัน",
+   "<b>การประกอบอาชีพ</b> — คนใกล้ทะเลอาจทำประมง คนในพื้นที่เพาะปลูกอาจทำเกษตร",
+   "<b>การแต่งกาย</b> — อากาศหนาวใส่เสื้อหนา อากาศร้อนใส่เสื้อผ้าบางสบาย",
+   "<b>อาหารการกิน</b> — คนแต่ละพื้นที่กินอาหารต่างกันตามทรัพยากรที่มี เช่น ปลา ผัก ผลไม้ หรือข้าว"]},
+ {h:"การเปลี่ยนแปลงของสภาพแวดล้อม", keys:[{n:"อดีต",l:"สิ่งของสมัยก่อน"},{n:"ปัจจุบัน",l:"สิ่งของที่ใช้ตอนนี้"}], items:[
+   "<b>การเปลี่ยนแปลงของสภาพแวดล้อม</b> คือ การที่สิ่งรอบตัวเราเปลี่ยนไปจากเดิม มีทั้งข้อดีและข้อควรระวัง",
+   "<b>การเดินทาง</b> — อดีตใช้เกวียน · ปัจจุบันใช้รถยนต์",
+   "<b>การหุงต้ม</b> — อดีตใช้เตาถ่าน · ปัจจุบันใช้เตาแก๊สหรือเตาไฟฟ้า",
+   "<b>บ้านเรือน</b> — อดีตสร้างด้วยไม้ · ปัจจุบันสร้างด้วยปูน คอนกรีต และอิฐมวลเบา",
+   "<b>การรีดผ้า</b> — อดีตใช้เตารีดถ่าน · ปัจจุบันใช้เตารีดไฟฟ้า",
+   "<b>การทำนา</b> — อดีตใช้ควายไถนา · ปัจจุบันใช้รถไถนา",
+   "<b>เราควรปฏิบัติ</b> — รู้จักใช้สิ่งของอย่างเหมาะสม · ปรับตัวให้เข้ากับการเปลี่ยนแปลง · เลือกใช้สิ่งที่ปลอดภัยและเป็นประโยชน์"]},
+ {h:"ปรับตัวตามสภาพอากาศ", keys:[{n:"ร้อน",l:"เสื้อบาง ดื่มน้ำมาก"},{n:"หนาว",l:"เสื้อหนา ให้ร่างกายอบอุ่น"},{n:"ฝนตก",l:"กางร่ม ใส่เสื้อกันฝน"}], items:[
+   "<b>อากาศร้อน</b> — ใส่เสื้อผ้าบางระบายอากาศได้ดี · ดื่มน้ำมาก ๆ · หลีกเลี่ยงการตากแดดนานเกินไป · ช่วง 10.00–15.00 น. แดดร้อนแรง ควรระวัง",
+   "<b>อากาศหนาว</b> — สวมเสื้อผ้าหนาหรือแขนยาว · ทำให้ร่างกายอบอุ่น · หลีกเลี่ยงการอยู่ในที่เย็นเกินไป",
+   "<b>ฝนตก</b> — ไม่ควรตากฝน · หากหลีกเลี่ยงไม่ได้ควรกางร่ม · สวมเสื้อกันฝนเพื่อป้องกันเปียกฝน",
+   "<b>ประโยชน์ของการปรับตัว</b> — ปลอดภัยมากขึ้น · ใช้ชีวิตสะดวกขึ้น · มีความสุข · สุขภาพแข็งแรง"]},
+ {h:"ดูแลรักษาสิ่งแวดล้อม — ที่บ้าน", items:[
+   "1. ช่วยทำความสะอาดบ้าน — กวาดบ้าน ถูพื้น จัดของให้เป็นระเบียบ ไม่ทิ้งขยะเรี่ยราด",
+   "2. ประหยัดน้ำ — ปิดก๊อกน้ำให้สนิท ไม่เปิดน้ำทิ้งไว้โดยไม่จำเป็น",
+   "3. ประหยัดพลังงาน — ปิดไฟ ปิดพัดลม และถอดปลั๊กเมื่อไม่ใช้งาน",
+   "4. คัดแยกขยะ — ขยะทั่วไป ขยะรีไซเคิล ขยะอินทรีย์",
+   "5. ปลูกต้นไม้ — ช่วยปลูกและรดน้ำต้นไม้เพื่อเพิ่มพื้นที่สีเขียว"]},
+ {h:"ดูแลรักษาสิ่งแวดล้อม — ที่ชั้นเรียน", items:[
+   "1. รักษาความสะอาดในห้องเรียน — ไม่ทิ้งขยะเรี่ยราด ช่วยกันเก็บขยะ",
+   "2. จัดโต๊ะเรียนให้เป็นระเบียบ — เก็บหนังสือและอุปกรณ์การเรียนให้เรียบร้อย",
+   "3. ใช้อุปกรณ์อย่างคุ้มค่า — ใช้กระดาษ ดินสอ อย่างประหยัด ไม่ใช้สิ้นเปลือง",
+   "4. ดูแลต้นไม้ในโรงเรียน — ช่วยกันรดน้ำ ไม่เด็ดใบ ไม่ทำลายต้นไม้",
+   "5. ร่วมกิจกรรมรักษาสิ่งแวดล้อม — เช่น เก็บขยะ ปลูกต้นไม้"]}
+];
+
+BANK.u11 = [
+ ["สิ่งแวดล้อมทางกายภาพ คืออะไร",["สิ่งต่าง ๆ รอบตัวเรา เช่น ดิน น้ำ อากาศ ภูเขา แม่น้ำ","ของเล่นในห้องนอน","การบ้านที่ครูสั่ง","เพื่อนในห้องเรียน"],0,"สิ่งแวดล้อมทางกายภาพ คือ สิ่งรอบตัวเรา เช่น ดิน น้ำ อากาศ ภูเขา แม่น้ำ และสภาพอากาศ"],
+ ["สิ่งแวดล้อมทางกายภาพมีผลต่อเรื่องใดบ้าง",["ที่อยู่อาศัย การเดินทาง อาชีพ การแต่งกาย และอาหาร","เฉพาะเรื่องการเรียน","เฉพาะเรื่องกีฬา","ไม่มีผลต่อชีวิตเราเลย"],0,"สิ่งแวดล้อมทางกายภาพมีผลต่อการใช้ชีวิตหลายด้าน"],
+ ["คนที่อาศัยใกล้ทะเลมักประกอบอาชีพใด",["ประมง","ทำเหมืองแร่","ขับเครื่องบิน","ทำงานในโรงงานน้ำแข็ง"],0,"คนใกล้ทะเลอาจทำประมง เพราะมีทรัพยากรสัตว์น้ำ"],
+ ["คนในพื้นที่เพาะปลูกมักประกอบอาชีพใด",["เกษตรกรรม","ประมงทะเลลึก","ต่อเรือ","ดำน้ำ"],0,"พื้นที่เพาะปลูกเหมาะกับการทำเกษตร"],
+ ["บ้านใกล้น้ำมักสร้างแบบใด",["บ้านยกพื้นสูง","บ้านชั้นเดียวติดพื้น","บ้านใต้ดิน","บ้านบนต้นไม้"],0,"บ้านใกล้น้ำมักยกพื้นสูงเพื่อป้องกันน้ำท่วม"],
+ ["พื้นที่แบบใดที่เดินทางสะดวกที่สุด",["พื้นที่ราบ","พื้นที่ภูเขาสูง","พื้นที่มีแม่น้ำขวาง","พื้นที่ป่าทึบ"],0,"พื้นที่ราบเดินทางสะดวก ส่วนภูเขาหรือแม่น้ำอาจต้องใช้พาหนะต่างกัน"],
+ ["อาหารของคนแต่ละพื้นที่ต่างกันเพราะอะไร",["ทรัพยากรที่มีในพื้นที่ต่างกัน","ความชอบของครูต่างกัน","สีของเสื้อผ้าต่างกัน","จำนวนเพื่อนต่างกัน"],0,"คนแต่ละพื้นที่กินอาหารต่างกันตามทรัพยากรที่มี"],
+ ["อากาศหนาวควรแต่งกายอย่างไร",["สวมเสื้อผ้าหนา","สวมเสื้อผ้าบาง","ไม่ต้องใส่เสื้อ","สวมชุดว่ายน้ำ"],0,"อากาศหนาวควรสวมเสื้อผ้าหนาหรือแขนยาวเพื่อให้ร่างกายอบอุ่น"],
+ ["การเปลี่ยนแปลงของสภาพแวดล้อม หมายถึงอะไร",["การที่สิ่งรอบตัวเราเปลี่ยนไปจากเดิม","การย้ายบ้านไปต่างจังหวัด","การเปลี่ยนชุดนักเรียน","การเปลี่ยนที่นั่งในห้อง"],0,"คือการที่สิ่งรอบตัวเราเปลี่ยนไปจากเดิม มีทั้งข้อดีและข้อควรระวัง"],
+ ["ในอดีตคนใช้อะไรในการเดินทาง",["เกวียน","รถยนต์","เครื่องบิน","รถไฟฟ้า"],0,"ในอดีตใช้เกวียน ปัจจุบันใช้รถยนต์"],
+ ["ปัจจุบันคนส่วนใหญ่ใช้อะไรหุงต้มอาหาร",["เตาแก๊สหรือเตาไฟฟ้า","เตาถ่านทุกบ้าน","กองไฟกลางแจ้ง","แสงแดด"],0,"ในอดีตใช้เตาถ่าน ปัจจุบันใช้เตาแก๊สหรือเตาไฟฟ้า"],
+ ["บ้านเรือนในอดีตสร้างด้วยวัสดุใด",["ไม้","อิฐมวลเบา","คอนกรีต","กระจก"],0,"ในอดีตสร้างบ้านด้วยไม้ ปัจจุบันใช้ปูน คอนกรีต และอิฐมวลเบา"],
+ ["ในอดีตคนใช้อะไรไถนา",["ควาย","รถไถนา","รถแทรกเตอร์","เครื่องบิน"],0,"ในอดีตใช้ควายไถนา ปัจจุบันใช้รถไถนา"],
+ ["เตารีดถ่านใช้ทำอะไร",["รีดผ้าในสมัยก่อน","หุงข้าวในปัจจุบัน","เดินทางในสมัยก่อน","ปลูกต้นไม้"],0,"ในอดีตใช้เตารีดถ่าน ปัจจุบันใช้เตารีดไฟฟ้า"],
+ ["ข้อใดเป็นผลดีของการเปลี่ยนแปลงในปัจจุบัน",["มีเครื่องใช้ไฟฟ้าช่วยให้ทำงานสะดวกขึ้น","ทำให้ทุกอย่างแย่ลง","ทำให้เดินทางช้าลง","ทำให้อาหารหายาก"],0,"การเปลี่ยนแปลงช่วยให้ชีวิตสะดวกขึ้น แต่ก็มีข้อควรระวัง"],
+ ["เมื่อสภาพแวดล้อมเปลี่ยนไป เราควรทำอย่างไร",["ปรับตัวให้เข้ากับการเปลี่ยนแปลง","ไม่สนใจอะไรเลย","ใช้ของเดิมตลอดไป","ทำตามใจตัวเองอย่างเดียว"],0,"ควรเรียนรู้และปรับตัวให้เหมาะสมกับการเปลี่ยนแปลง"],
+ ["เมื่ออากาศร้อน ควรปฏิบัติตนอย่างไร",["ใส่เสื้อผ้าบางและดื่มน้ำมาก ๆ","ใส่เสื้อหนาหลายชั้น","งดดื่มน้ำ","ตากแดดนาน ๆ"],0,"อากาศร้อนควรใส่เสื้อบาง ดื่มน้ำมาก ๆ และเลี่ยงการตากแดดนาน"],
+ ["ช่วงเวลาใดที่แดดร้อนแรงและควรระวัง",["10.00 – 15.00 น.","05.00 – 06.00 น.","18.00 – 20.00 น.","22.00 – 24.00 น."],0,"ช่วง 10.00–15.00 น. แดดร้อนแรง ควรหลีกเลี่ยงการตากแดด"],
+ ["เมื่อฝนตก เราควรทำอย่างไร",["กางร่มหรือสวมเสื้อกันฝน","วิ่งเล่นกลางฝนนาน ๆ","ยืนตากฝนเฉย ๆ","ถอดเสื้อออก"],0,"เมื่อฝนตกไม่ควรตากฝน ควรกางร่มหรือสวมเสื้อกันฝน"],
+ ["ร่มใช้เมื่อใด",["เมื่อฝนตก","เมื่ออากาศหนาว","เมื่อเล่นในสนาม","เมื่อนอนหลับ"],0,"ร่มใช้เมื่อฝนตก หรือใช้กันแดด"],
+ ["เสื้อกันหนาวใช้เมื่อใด",["เมื่ออากาศหนาว","เมื่ออากาศร้อน","เมื่อฝนตก","เมื่อว่ายน้ำ"],0,"เสื้อกันหนาวใช้เมื่ออากาศหนาว เพื่อให้ร่างกายอบอุ่น"],
+ ["ประโยชน์ของการปรับตัวตามสภาพอากาศคือข้อใด",["ปลอดภัยและสุขภาพแข็งแรง","ทำให้เรียนเก่งทันที","ทำให้สูงขึ้นเร็ว","ทำให้ได้เงินมากขึ้น"],0,"การปรับตัวทำให้ปลอดภัย สะดวก มีความสุข และสุขภาพแข็งแรง"],
+ ["การเก็บขยะลงถังเป็นการทำอะไร",["ดูแลรักษาสิ่งแวดล้อม","ทำให้บ้านสกปรก","ทำลายต้นไม้","สิ้นเปลืองพลังงาน"],0,"การเก็บขยะลงถังทำให้บริเวณสะอาดเรียบร้อย"],
+ ["ข้อใดเป็นการประหยัดน้ำที่บ้าน",["ปิดก๊อกน้ำให้สนิท","เปิดน้ำทิ้งไว้ตลอดเวลา","ล้างรถวันละสามครั้ง","เปิดฝักบัวนานมาก"],0,"ปิดก๊อกน้ำให้สนิทและไม่เปิดน้ำทิ้งไว้โดยไม่จำเป็น"],
+ ["ข้อใดเป็นการประหยัดพลังงาน",["ปิดไฟและถอดปลั๊กเมื่อไม่ใช้งาน","เปิดไฟทิ้งไว้ทั้งคืน","เปิดพัดลมตลอดเวลา","เสียบปลั๊กไว้ตลอด"],0,"ปิดไฟ ปิดพัดลม และถอดปลั๊กเมื่อไม่ใช้งาน"],
+ ["การคัดแยกขยะแบ่งได้เป็นประเภทใดบ้าง",["ขยะทั่วไป ขยะรีไซเคิล ขยะอินทรีย์","ขยะใหญ่ ขยะเล็ก","ขยะแพง ขยะถูก","ขยะใหม่ ขยะเก่า"],0,"แยกขยะให้ถูกประเภท เช่น ขยะทั่วไป ขยะรีไซเคิล และขยะอินทรีย์"],
+ ["ข้อใดเป็นการดูแลสิ่งแวดล้อมในห้องเรียน",["จัดโต๊ะเรียนให้เป็นระเบียบ","ขีดเขียนบนโต๊ะและผนัง","ทิ้งเศษกระดาษไว้บนพื้น","เด็ดใบไม้เล่น"],0,"ควรจัดโต๊ะเรียนและรักษาความสะอาดในห้องเรียน"],
+ ["การใช้กระดาษและดินสออย่างประหยัด เรียกว่าอะไร",["ใช้อุปกรณ์อย่างคุ้มค่า","ใช้อย่างสิ้นเปลือง","ทิ้งขว้าง","สะสมของ"],0,"ใช้อุปกรณ์การเรียนอย่างประหยัดและคุ้มค่า"],
+ ["ข้อใด <b>ไม่ใช่</b> การดูแลรักษาสิ่งแวดล้อม",["ขีดเขียนโต๊ะและผนังห้องเรียน","รดน้ำต้นไม้","เก็บขยะลงถัง","ปิดก๊อกน้ำ"],0,"การขีดเขียนโต๊ะและผนังทำให้ห้องเรียนไม่สะอาดและเสียหาย"],
+ ["การรดน้ำต้นไม้ช่วยเรื่องใด",["ช่วยให้ต้นไม้เจริญเติบโต","ทำให้ห้องสกปรก","สิ้นเปลืองไฟฟ้า","ทำให้ต้นไม้ตาย"],0,"การรดน้ำช่วยให้ต้นไม้เจริญเติบโตและเพิ่มพื้นที่สีเขียว"],
+ ["การดูแลรักษาสิ่งแวดล้อมเป็นหน้าที่ของใคร",["ทุกคน","ครูเท่านั้น","ภารโรงเท่านั้น","ผู้ใหญ่เท่านั้น"],0,"การดูแลรักษาสิ่งแวดล้อมเป็นหน้าที่ของทุกคน"],
+ ["ข้อสรุปของบทเรียนนี้คือข้อใด",["สิ่งแวดล้อมมีผลต่อชีวิตเรา จึงควรปรับตัวและช่วยกันดูแล","สิ่งแวดล้อมไม่เกี่ยวกับเราเลย","เราเปลี่ยนแปลงอะไรไม่ได้","ควรใช้ทรัพยากรให้หมดเร็วที่สุด"],0,"สิ่งแวดล้อมมีผลต่อการใช้ชีวิต เราจึงควรรู้จักปรับตัวและร่วมกันดูแลรักษา"]
+];
+
+XB.u11 = {
+ tf:[
+  ["คนในอดีตมักใช้เกวียนในการเดินทาง",true,"ในอดีตใช้เกวียน ปัจจุบันใช้รถยนต์"],
+  ["ปัจจุบันคนส่วนใหญ่ยังใช้เตาถ่านทุกบ้าน",false,"ปัจจุบันส่วนใหญ่ใช้เตาแก๊สหรือเตาไฟฟ้า"],
+  ["ปัจจุบันมีเครื่องใช้ไฟฟ้าช่วยให้ทำงานสะดวกขึ้น",true,"เครื่องใช้ไฟฟ้าช่วยให้การทำงานสะดวกและรวดเร็วขึ้น"],
+  ["การเปลี่ยนแปลงของสภาพแวดล้อมมีแต่ข้อดีเท่านั้น",false,"การเปลี่ยนแปลงมีทั้งข้อดีและข้อควรระวัง"],
+  ["เมื่อสภาพอากาศเปลี่ยน เราควรแต่งกายให้เหมาะสม",true,"ควรแต่งกายและปฏิบัติตนให้เหมาะกับสภาพอากาศ"],
+  ["บ้านในอดีตและบ้านในปัจจุบันเหมือนกันทุกอย่าง",false,"อดีตสร้างด้วยไม้ ปัจจุบันใช้ปูน คอนกรีต และอิฐมวลเบา"],
+  ["เมื่ออากาศร้อนควรใส่เสื้อบาง ระบายอากาศได้ดี",true,"อากาศร้อนควรใส่เสื้อผ้าบางที่ระบายอากาศได้ดี"],
+  ["เมื่อฝนตก ควรกางร่มหรือใส่เสื้อกันฝน",true,"เมื่อฝนตกควรกางร่มหรือสวมเสื้อกันฝน"],
+  ["ถ้าแดดจัด เราไม่จำเป็นต้องดื่มน้ำ",false,"อากาศร้อนควรดื่มน้ำมาก ๆ เพื่อไม่ให้ร่างกายขาดน้ำ"],
+  ["อากาศหนาวควรใส่เสื้อผ้าบางมากเพื่อให้เย็นสบาย",false,"อากาศหนาวควรสวมเสื้อผ้าหนาเพื่อให้ร่างกายอบอุ่น"],
+  ["อากาศร้อนควรดื่มน้ำมาก ๆ",true,"การดื่มน้ำมาก ๆ ช่วยป้องกันร่างกายขาดน้ำ"],
+  ["ถ้าฝนตก เราควรวิ่งเล่นกลางฝนนาน ๆ",false,"ไม่ควรตากฝน เพราะอาจทำให้เจ็บป่วยได้"],
+  ["การเก็บขยะลงถังเป็นการดูแลสิ่งแวดล้อม",true,"ช่วยให้บริเวณสะอาดเรียบร้อย"],
+  ["เราควรเปิดก๊อกน้ำทิ้งไว้ตลอดเวลา",false,"ควรปิดก๊อกน้ำให้สนิทเพื่อประหยัดน้ำ"],
+  ["หลังใช้โต๊ะเรียนควรจัดให้เรียบร้อย",true,"การจัดโต๊ะเรียนทำให้ห้องเรียนเป็นระเบียบ"],
+  ["การทิ้งเศษกระดาษไว้บนพื้นช่วยให้ห้องสะอาด",false,"ควรเก็บเศษกระดาษทิ้งลงถังขยะ"],
+  ["การรดน้ำต้นไม้ช่วยดูแลสิ่งแวดล้อม",true,"ช่วยให้ต้นไม้เจริญเติบโตและเพิ่มพื้นที่สีเขียว"],
+  ["เราควรขีดเขียนโต๊ะและผนังห้องเรียน",false,"ไม่ควรขีดเขียน เพราะทำให้ห้องเรียนสกปรกและเสียหาย"],
+  ["คนใกล้ทะเลอาจประกอบอาชีพประมง",true,"สิ่งแวดล้อมมีผลต่อการประกอบอาชีพ"],
+  ["การดูแลรักษาสิ่งแวดล้อมเป็นหน้าที่ของทุกคน",true,"ทุกคนช่วยกันดูแลบ้านและชั้นเรียนให้สะอาดน่าอยู่ได้"]
+ ],
+ fill:[
+  ["สิ่งของในสมัยก่อนเรียกว่า ___",["อดีต","ปัจจุบัน","อนาคต","เหมาะสม"],"สิ่งของในสมัยก่อนอยู่ในช่วงอดีต"],
+  ["สิ่งของที่เราใช้ในตอนนี้เรียกว่า ___",["ปัจจุบัน","อดีต","โบราณ","สะดวก"],"สิ่งของที่ใช้ในตอนนี้คือปัจจุบัน"],
+  ["รถยนต์ช่วยให้การเดินทาง___ขึ้น",["สะดวก","ช้า","ยาก","อันตราย"],"รถยนต์ช่วยให้การเดินทางสะดวกและรวดเร็วขึ้น"],
+  ["เมื่อสภาพแวดล้อมเปลี่ยนไป เราควร___ให้เข้ากับสถานการณ์",["ปรับตัว","หนี","เฉยเมย","ต่อต้าน"],"ควรเรียนรู้และปรับตัวให้เหมาะสม"],
+  ["ถ้าอากาศหนาว เราควรใส่เสื้อผ้าให้___",["เหมาะสม","บางที่สุด","น้อยที่สุด","เปียก"],"ควรแต่งกายให้เหมาะสมกับสภาพอากาศ"],
+  ["เมื่ออากาศร้อน เราควรดื่ม___มาก ๆ",["น้ำ","น้ำอัดลม","กาแฟ","นมเปรี้ยว"],"อากาศร้อนควรดื่มน้ำมาก ๆ"],
+  ["ถ้าแดดแรง ควรใส่___ที่ระบายอากาศได้ดี",["เสื้อบาง","เสื้อหนา","เสื้อกันฝน","ผ้าห่ม"],"อากาศร้อนควรใส่เสื้อผ้าบางที่ระบายอากาศได้ดี"],
+  ["เมื่ออากาศ___ เราควรสวมเสื้อหนา",["หนาว","ร้อน","อบอุ่น","แห้ง"],"อากาศหนาวควรสวมเสื้อผ้าหนา"],
+  ["ถ้าฝนตก ควรกาง___เพื่อป้องกันฝน",["ร่ม","พัดลม","เสื้อบาง","หมวกฟาง"],"เมื่อฝนตกควรกางร่มหรือสวมเสื้อกันฝน"],
+  ["เราควรทิ้ง___ลงในถังให้ถูกที่",["ขยะ","หนังสือ","ดินสอ","ต้นไม้"],"ควรทิ้งขยะลงถังให้ถูกที่"],
+  ["การปิดก๊อกหลังใช้งานช่วยประหยัด___",["น้ำ","ไฟ","กระดาษ","เวลา"],"ปิดก๊อกน้ำให้สนิทช่วยประหยัดน้ำ"],
+  ["การกวาดพื้นช่วยให้___สะอาด",["บ้าน","ต้นไม้","น้ำ","อากาศ"],"การกวาดบ้านและถูพื้นทำให้บ้านสะอาด"],
+  ["การรดน้ำช่วยให้___เจริญเติบโต",["ต้นไม้","โต๊ะเรียน","ขยะ","พัดลม"],"การรดน้ำช่วยให้ต้นไม้เจริญเติบโต"],
+  ["การจัดโต๊ะเรียนให้เรียบร้อยทำให้ห้องเรียนมี___",["ระเบียบ","ขยะ","ฝุ่น","เสียงดัง"],"จัดโต๊ะเรียนให้เรียบร้อยทำให้ห้องเรียนเป็นระเบียบ"]
+ ],
+ order:[
+  ["เรียงลำดับการเปลี่ยนแปลงของการเดินทางจากอดีตสู่ปัจจุบัน",["เดินเท้า","ใช้เกวียนเทียมวัว","ใช้รถยนต์","ใช้รถไฟฟ้า"],"การเดินทางเปลี่ยนจากเดินเท้าและเกวียน มาเป็นรถยนต์และรถไฟฟ้า"],
+  ["เรียงลำดับสิ่งที่ควรทำเมื่อฝนกำลังจะตก",["สังเกตว่าฟ้าครึ้มและมีเมฆฝน","หยิบร่มหรือเสื้อกันฝน","กางร่มหรือสวมเสื้อกันฝน","เดินกลับบ้านโดยไม่เปียกฝน"],"การสังเกตสภาพอากาศช่วยให้เราเตรียมตัวได้ทัน"],
+  ["เรียงลำดับการช่วยดูแลความสะอาดในห้องเรียน",["เก็บขยะบนพื้นลงถัง","กวาดพื้นห้องเรียน","จัดโต๊ะและเก้าอี้ให้เป็นระเบียบ","ห้องเรียนสะอาดน่าเรียน"],"ช่วยกันทำทีละขั้น ห้องเรียนก็สะอาดน่าอยู่"],
+  ["เรียงลำดับการคัดแยกขยะ",["รวบรวมขยะที่เกิดขึ้น","ดูว่าขยะเป็นประเภทใด","ทิ้งลงถังที่ตรงประเภท","นำขยะรีไซเคิลไปใช้ประโยชน์ต่อ"],"คัดแยกขยะให้ถูกประเภทช่วยรักษาสิ่งแวดล้อม"]
+ ],
+ match:[
+  ["จับคู่สิ่งของกับการใช้งานให้ถูกต้อง",[["เกวียน","ใช้เดินทางในสมัยก่อน"],["รถยนต์","ใช้เดินทางในปัจจุบัน"],["เตาถ่าน","ใช้หุงต้มในสมัยก่อน"],["เตาไฟฟ้า","ใช้หุงต้มในปัจจุบัน"],["เตารีดถ่าน","ใช้รีดผ้าในสมัยก่อน"]],"ทบทวนการเปลี่ยนแปลงของสิ่งของจากอดีตสู่ปัจจุบัน"],
+  ["จับคู่สภาพอากาศกับการปฏิบัติตน",[["อากาศร้อน","ควรดื่มน้ำมาก ๆ"],["อากาศหนาว","ควรสวมเสื้อผ้าหนา"],["ฝนตก","ควรหลีกเลี่ยงการตากฝน"],["เสื้อกันหนาว","ใช้เมื่ออากาศหนาว"],["ร่ม","ใช้เมื่อฝนตก"]],"ปรับตัวให้เหมาะกับสภาพอากาศเพื่อความปลอดภัยและสุขภาพดี"],
+  ["จับคู่การกระทำกับผลที่เกิดขึ้น",[["กวาดบ้าน","ทำให้บ้านสะอาด"],["รดน้ำต้นไม้","ช่วยให้ต้นไม้เจริญเติบโต"],["เก็บขยะลงถัง","ทำให้บริเวณสะอาดเรียบร้อย"],["จัดโต๊ะเรียน","ทำให้ห้องเรียนเป็นระเบียบ"],["ปิดก๊อกน้ำ","ช่วยประหยัดน้ำ"]],"การกระทำเล็ก ๆ ของเราช่วยดูแลสิ่งแวดล้อมได้จริง"],
+  ["จับคู่สิ่งแวดล้อมกับผลต่อการใช้ชีวิต",[["อยู่ใกล้ทะเล","ประกอบอาชีพประมง"],["พื้นที่เพาะปลูก","ประกอบอาชีพเกษตรกรรม"],["พื้นที่ใกล้น้ำ","สร้างบ้านยกพื้นสูง"],["อากาศหนาว","สวมเสื้อผ้าหนา"]],"สิ่งแวดล้อมทางกายภาพมีผลต่ออาชีพ ที่อยู่อาศัย และการแต่งกาย"]
+ ]
+};
+EN.u11 = {
+ mc:[
+  ["What is the physical environment?",["The things around us, such as soil, water, air, mountains and rivers","Toys in the bedroom","Homework the teacher sets","Friends in the classroom"],"The physical environment is what surrounds us: soil, water, air, mountains, rivers and the weather."],
+  ["Which parts of life does the physical environment affect?",["Housing, travel, work, clothing and food","Only schoolwork","Only sport","It does not affect our lives at all"],"The physical environment affects many parts of daily life."],
+  ["What work do people living near the sea often do?",["Fishing","Mining","Flying aeroplanes","Working in an ice factory"],"People near the sea often fish, because the sea provides that resource."],
+  ["What work do people in farming areas often do?",["Agriculture","Deep-sea fishing","Boat building","Diving"],"Land suited to growing crops suits farming."],
+  ["How are houses near water usually built?",["Raised high on stilts","Flat on the ground","Underground","In a tree"],"Houses near water are often raised to protect them from flooding."],
+  ["Which kind of land is easiest to travel across?",["Flat land","High mountains","Land cut by a river","Thick forest"],"Flat land is easy to travel; mountains or rivers need different routes and vehicles."],
+  ["Why does food differ from place to place?",["Because each area has different resources","Because teachers like different things","Because clothes are different colours","Because there are different numbers of friends"],"People eat according to the resources their area provides."],
+  ["How should you dress in cold weather?",["Wear thick clothes","Wear thin clothes","Wear nothing","Wear a swimsuit"],"In cold weather wear thick or long-sleeved clothes to stay warm."],
+  ["What does “change in the environment” mean?",["Things around us becoming different from before","Moving house to another province","Changing your school uniform","Changing seats in class"],"It means the things around us change; there are both benefits and things to watch out for."],
+  ["What did people use to travel in the past?",["An ox cart","A car","An aeroplane","An electric train"],"In the past people used ox carts; today they use cars."],
+  ["What do most people cook with today?",["A gas or electric stove","A charcoal stove in every house","An open fire outdoors","Sunlight"],"In the past people used charcoal stoves; today gas or electric ones."],
+  ["What were houses built from in the past?",["Wood","Lightweight brick","Concrete","Glass"],"In the past houses were built of wood; today of cement, concrete and lightweight brick."],
+  ["What did people use to plough rice fields in the past?",["A buffalo","A rotary tiller","A tractor","An aeroplane"],"In the past a buffalo ploughed the field; today a machine does."],
+  ["What was a charcoal iron used for?",["Ironing clothes in the past","Cooking rice today","Travelling in the past","Growing plants"],"In the past people used a charcoal iron; today an electric one."],
+  ["Which is a benefit of today's changes?",["Electrical appliances make work easier","Everything has become worse","Travel has become slower","Food is harder to find"],"Change makes life more convenient, but there are still things to watch out for."],
+  ["When the environment changes, what should we do?",["Adapt ourselves to the change","Take no interest","Use only the old things forever","Do only as we please"],"We should learn about the change and adapt suitably."],
+  ["What should you do in hot weather?",["Wear thin clothes and drink plenty of water","Wear several thick layers","Stop drinking water","Stay in the sun a long time"],"In hot weather wear light clothes, drink plenty of water and avoid long sun exposure."],
+  ["Which hours have the strongest sun and need care?",["10 a.m. – 3 p.m.","5 – 6 a.m.","6 – 8 p.m.","10 p.m. – midnight"],"Between 10 a.m. and 3 p.m. the sun is strongest; avoid being out in it."],
+  ["What should you do when it rains?",["Use an umbrella or wear a raincoat","Play in the rain for a long time","Just stand in the rain","Take off your shirt"],"Do not get soaked; use an umbrella or a raincoat."],
+  ["When is an umbrella used?",["When it rains","When it is cold","When playing in the field","When sleeping"],"An umbrella is used in the rain, or against the sun."],
+  ["When is a winter coat used?",["When it is cold","When it is hot","When it rains","When swimming"],"A winter coat is worn in cold weather to keep the body warm."],
+  ["What is the benefit of adapting to the weather?",["Staying safe and healthy","Becoming good at maths at once","Growing taller quickly","Earning more money"],"Adapting keeps us safe, comfortable, happy and healthy."],
+  ["Putting rubbish in the bin is doing what?",["Caring for the environment","Making the house dirty","Destroying trees","Wasting energy"],"Putting rubbish in the bin keeps the area clean and tidy."],
+  ["Which saves water at home?",["Turning the tap fully off","Leaving the water running all the time","Washing the car three times a day","Running the shower for a very long time"],"Turn the tap fully off and do not leave water running needlessly."],
+  ["Which saves energy?",["Turning off lights and unplugging when not in use","Leaving lights on all night","Running a fan all the time","Leaving everything plugged in"],"Turn off lights and fans and unplug appliances when not in use."],
+  ["How is rubbish sorted?",["General waste, recyclable waste and organic waste","Big rubbish and small rubbish","Expensive and cheap rubbish","New and old rubbish"],"Sort rubbish by type: general, recyclable and organic."],
+  ["Which cares for the environment in the classroom?",["Keeping your desk tidy","Drawing on desks and walls","Leaving scraps of paper on the floor","Picking leaves to play with"],"Keep your desk tidy and the classroom clean."],
+  ["Using paper and pencils sparingly is called what?",["Using materials wisely","Being wasteful","Throwing things away","Hoarding things"],"Use school materials carefully and economically."],
+  ["Which is <b>NOT</b> caring for the environment?",["Drawing on classroom desks and walls","Watering the plants","Putting rubbish in the bin","Turning off the tap"],"Drawing on desks and walls makes the classroom dirty and damaged."],
+  ["How does watering plants help?",["It helps plants grow","It makes the room dirty","It wastes electricity","It kills the plants"],"Watering helps plants grow and adds green space."],
+  ["Whose duty is caring for the environment?",["Everyone's","Only the teacher's","Only the caretaker's","Only adults'"],"Caring for the environment is everyone's duty."],
+  ["What is the conclusion of this lesson?",["The environment affects our lives, so we should adapt and help care for it","The environment has nothing to do with us","We cannot change anything","We should use up resources as fast as possible"],"The environment shapes daily life, so we adapt to it and look after it together."]
+ ],
+ tf:[
+  ["People in the past often travelled by ox cart.","In the past people used ox carts; today they use cars."],
+  ["Today most households still use a charcoal stove.","Today most people use gas or electric stoves."],
+  ["Today electrical appliances make work easier.","Appliances make work faster and more convenient."],
+  ["Change in the environment brings only benefits.","Change brings both benefits and things to watch out for."],
+  ["When the weather changes, we should dress suitably.","Dress and behave according to the weather."],
+  ["Houses of the past and houses of today are the same in every way.","In the past houses were wooden; today they use cement, concrete and lightweight brick."],
+  ["In hot weather you should wear thin, breathable clothes.","Light, breathable clothes suit hot weather."],
+  ["When it rains you should use an umbrella or wear a raincoat.","Use an umbrella or raincoat when it rains."],
+  ["In strong sunshine there is no need to drink water.","In hot weather drink plenty of water so the body does not dehydrate."],
+  ["In cold weather you should wear very thin clothes to stay cool.","In cold weather wear thick clothes to keep warm."],
+  ["In hot weather you should drink plenty of water.","Drinking plenty of water prevents dehydration."],
+  ["When it rains we should play out in it for a long time.","Do not get soaked in the rain — it can make you ill."],
+  ["Putting rubbish in the bin cares for the environment.","It keeps the area clean and tidy."],
+  ["We should leave the tap running all the time.","Turn the tap fully off to save water."],
+  ["After using your desk you should tidy it.","A tidy desk keeps the classroom orderly."],
+  ["Leaving scraps of paper on the floor keeps the room clean.","Pick up scraps and put them in the bin."],
+  ["Watering plants helps care for the environment.","It helps plants grow and adds green space."],
+  ["We should draw on classroom desks and walls.","Drawing on them makes the classroom dirty and damaged."],
+  ["People living near the sea may work as fishers.","The environment shapes the work people do."],
+  ["Caring for the environment is everyone's duty.","Everyone can help keep home and classroom clean and pleasant."]
+ ],
+ fill:[
+  ["Things from earlier times belong to the ___ .",["past","present","future","suitable"],"Things from earlier times belong to the past."],
+  ["The things we use now belong to the ___ .",["present","past","ancient times","convenient"],"What we use now belongs to the present."],
+  ["Cars make travel more ___ .",["convenient","slow","difficult","dangerous"],"Cars make travel faster and more convenient."],
+  ["When the environment changes, we should ___ to the situation.",["adapt","run away","stay indifferent","object"],"We should learn and adapt suitably."],
+  ["In cold weather we should dress ___ .",["suitably","as thinly as possible","as little as possible","in wet clothes"],"Dress suitably for the weather."],
+  ["In hot weather we should drink plenty of ___ .",["water","fizzy drink","coffee","yoghurt drink"],"Drink plenty of water in hot weather."],
+  ["In strong sun, wear ___ that breathe well.",["thin clothes","thick clothes","a raincoat","a blanket"],"Light, breathable clothes suit hot weather."],
+  ["When the weather is ___ we should wear thick clothes.",["cold","hot","warm","dry"],"Wear thick clothes in cold weather."],
+  ["When it rains, put up an ___ to keep dry.",["umbrella","electric fan","thin shirt","straw hat"],"Use an umbrella or raincoat in the rain."],
+  ["We should put ___ in the bin in the right place.",["rubbish","books","pencils","plants"],"Put rubbish in the correct bin."],
+  ["Turning off the tap after use saves ___ .",["water","electricity","paper","time"],"Turning the tap fully off saves water."],
+  ["Sweeping the floor keeps the ___ clean.",["house","plants","water","air"],"Sweeping and mopping keep the house clean."],
+  ["Watering helps ___ grow.",["plants","desks","rubbish","fans"],"Watering helps plants grow."],
+  ["A tidy desk makes the classroom ___ .",["orderly","full of rubbish","dusty","noisy"],"A tidy desk keeps the classroom orderly."]
+ ],
+ order:[
+  ["Put the changes in travel in order from past to present",["Walking","Using an ox cart","Using a car","Using an electric train"],"Travel changed from walking and ox carts to cars and electric trains."],
+  ["Put in order what to do when rain is coming",["Notice the sky is grey with rain clouds","Get an umbrella or raincoat","Put up the umbrella or wear the raincoat","Walk home without getting wet"],"Watching the weather lets us prepare in time."],
+  ["Put the steps of keeping the classroom clean in order",["Pick up rubbish from the floor","Sweep the classroom floor","Tidy the desks and chairs","A clean classroom, pleasant to learn in"],"Doing each step together keeps the classroom pleasant."],
+  ["Put the steps of sorting rubbish in order",["Collect the rubbish that has been made","See which type each piece is","Put it in the matching bin","Send recyclable waste to be used again"],"Sorting rubbish correctly helps protect the environment."]
+ ],
+ match:[
+  ["Match each object with how it was used",[["Ox cart","Used for travel in the past"],["Car","Used for travel today"],["Charcoal stove","Used for cooking in the past"],["Electric stove","Used for cooking today"],["Charcoal iron","Used for ironing in the past"]],"Review how everyday objects changed from past to present."],
+  ["Match each weather with what to do",[["Hot weather","Drink plenty of water"],["Cold weather","Wear thick clothes"],["Rain","Avoid getting soaked"],["Winter coat","Used when it is cold"],["Umbrella","Used when it rains"]],"Adapting to the weather keeps us safe and healthy."],
+  ["Match each action with its result",[["Sweeping the house","The house is clean"],["Watering the plants","The plants grow"],["Putting rubbish in the bin","The area is clean and tidy"],["Tidying your desk","The classroom is orderly"],["Turning off the tap","Water is saved"]],"Our small actions really do care for the environment."],
+  ["Match each environment with how it shapes life",[["Living near the sea","Working as a fisher"],["Land good for crops","Working in farming"],["Land near water","Building houses raised on stilts"],["Cold weather","Wearing thick clothes"]],"The physical environment shapes work, housing and clothing."]
  ]
 };
 
